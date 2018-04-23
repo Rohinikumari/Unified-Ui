@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+    <title>mobile web app creation and access grant</title>
+	<!-- CSS for jquery table -->
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	 <!-- Bootstrap Fileupload CSS
+	 <link href="css/fileinput.min.css" rel="stylesheet"> -->
+    <!-- Custom styles for this template -->
+    <link href="css/signup.css" rel="stylesheet">
+    <link href="css/inventorylanding.css" rel="stylesheet">
+    <link href="css/landing.css" rel="stylesheet">
+    <link href="css/datatables.css" rel="stylesheet">
+    <link href="css/cgw.css" rel="stylesheet">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <!--<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css"> -->
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]>
+  <!-->
+</head>
+<style>
+#demo {
+    text-align: right;
+    color: white;
+}
+</style>
+<body class="landing-body">
+      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+          <div class="container">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+<p class="logo"><a href="http://13.250.24.178:3500/login.html"><button onclick="removeData();"><img align = "left" alt="" src = "/img/logout.png" height = "15" width = "15"></button>
+</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unified UI</p><p id="demo"></p>
+<script>
+                                 
+</script>                 
+              <div class="navbar-collapse navbar-ex1-collapse collapse" style="height: 1px;">
+              </div>
+               <ul class="nav nav-sidebar navbar-inverse side-nav">
+	       <div class="scroll">
+	       
+              <div class="dropdown">
+		<button onclick="myFunction()" class="dropbtn">STANDARD DEVICE CLOUD GATEWAY</button>
+		<div id="myDropdown" class="dropdown-content">
+		<a href="CloudProvisioning.html">Cloud Provisioning</a>
+		<a href="solutionProvisioning.html">Solution Provisioning</a>
+		<a href="DeviceProvisioningOrInventory.html">Device Provisioning/Inventory</a>
+		<a href="localtestdemo.html">Local Operation (EMQTT)</a>
+		<a href="remoteoperationdemo.html">Remote Operation (DCG)</a>
+                <a href="registrationGateway.html">Registration via API Gateway</a>
+		<a href="registration.html">Direct Standard Gateway Registration</a>
+		<br>		
+		<div class="dropdown2">		
+		<button onclick="myFunction2()" class="dropbtn2">PONTE APPS</button>
+                <div id="myDropdown2" class="dropdown2-content">
+		<a href="PartnerTesting.html">Admin Testing with Ponte</a>
+		<a href="operatorTesting.html">Operator Testing with Ponte</a>
+		<a href="solutionTesting.html">Solution Testing with Ponte</a>
+		<a href="Solution&NodeTesting.html">Solution and Node Testing with Ponte</a>
+		<a href="NodeTesting.html">Nodes Testing with Ponte</a>
+		</div>
+		</div>
+                <div class="dropdown11">
+		<button onclick="location.href=''" class="dropbtn11">TCP/IP ADAPTER APPS</button>
+                <div id="myDropdown11" class="dropdown11-content">
+		</div>
+		</div>		
+		</div> 
+		</div>
+		<br>
+		<br>
+		<div class="dropdown22">
+		<button onclick="myFunction22()" class="dropbtn22">SOL DEVELOPMENT(AUTH CODE)</button>
+                <div id="myDropdown22" class="dropdown22-content">
+		<a href="webAppAccessWithoutSecretKey.html">MOBILE WEB APP ACCESS WITHOUT SECRET KEY</a>
+		<a href="webAppAccessWithSecretKey.html">MOBILE WEB APP ACCESS WITH SECRET KEY</a>
+		<a href="mobilewebappCreationandAccessGrant.html">MOBILE WEB APP CREATION AND TESTING (AUTH GRANT FLOW)</a>
+		<div class="dropdown24">
+		<button onclick="myFunction24()" class="dropbtn24">MOBILE NATIVE APP</button>
+                <div id="myDropdown24" class="dropdown24-content">
+		<a href="">Get Authorization Code</a>	
+		<a href="">Get Access Token</a>	
+		<a href="">Call Other Api's For Mobile App Development</a>	
+		</div>
+		</div>
+		<div class="dropdown19">
+		<button onclick="myFunction19()" class="dropbtn19">MOBILE HYBRID APP</button>
+                <div id="myDropdown19" class="dropdown19-content">
+		<a href="deviceRegister.html">Device Registration</a>
+		<a href="appRegister.html">App Registration</a>
+		<a href="appSolActivation.html">App/Solution Activation</a>
+		<a href="getAuthorizationCode.html">Get Authorization Code</a>	
+		<a href="getAccessToken.html">Get Access Token</a>	
+		<a href="mobilewebsite.html">Create Mobile Website</a>
+		<a href="accessCreatedMobileWebsite.html">Access Created Mobile Website</a>
+		</div>
+		</div>
+		</div>
+		</div>
+		<br>
+		<br>
+		<div class="dropdown26">
+		<button onclick="myFunction26()" class="dropbtn26">SOL DEVELOPMENT(IMPLICIT)</button>
+                <div id="myDropdown26" class="dropdown26-content">
+		<a href="mobilewebappImplicit.html">MOBILE WEB APP CREATION AND TESTING (IMPLICIT)</a>	
+		</div>
+		</div>
+		<br>
+		<br>
+		<div class="dropdown20">
+		<button onclick="myFunction20()" class="dropbtn20">MY RESOURCES</button>
+                <div id="myDropdown20" class="dropdown20-content">
+		<a href="mySolutions.html">My Solutions</a>	
+		<a href="mysites.html">My Sites</a>	
+		<a href="mydevices.html">My Devices</a>	
+		</div>
+		</div>
+		<br>
+		<br>		
+		<div class="dropdown9">
+		<button onclick="myFunction9()" class="dropbtn9">ONE M2M SERVICE</button>
+                <div id="myDropdown9" class="dropdown9-content">
+		<div class="dropdown6">
+		<button onclick="myFunction6()" class="dropbtn6">DCG APPS</button>
+                <div id="myDropdown6" class="dropdown6-content">
+		<a href="partnerTestingDCG.html">Admin Testing with DCG</a>
+                <a href="operatorTestingDCG.html">Operator Testing with DCG</a>
+		<a href="solutionTestingDCG.html">Solution Testing with DCG</a>
+		<a href="solution&nodesTestingDCG.html">Solution and Nodes Testing with DCG</a>
+		<a href="nodesTestingDCG.html">Node Testing with DCG</a>
+		</div>
+		</div>
+		<div class="dropdown10">
+		<button onclick="myFunction10()" class="dropbtn10">OTA</button>
+                <div id="myDropdown10" class="dropdown10-content">
+		<a href="">Firmware pending update</a>
+		<a href="">Software pending update</a>
+               	</div>
+		</div>
+		<div class="dropdown8">
+		<button onclick="myFunction8()" class="dropbtn8">SDP</button>
+                <div id="myDropdown8" class="dropdown8-content">
+		</div>
+		</div>
+		</div>
+		<br>
+		<br>		
+		<div class="dropdown16">
+		<button onclick="myFunction16()" class="dropbtn16">SITE INSTALLER</button>
+                <div id="myDropdown16" class="dropdown16-content">
+		<a href="spot.html">Spot</a>
+		<a href="lot.html">Lot</a>
+                <a href="remoteaccessvalidation.html">Remote Access Validation</a>		
+		</div>
+		</div>
+		<br>
+		<br>
+	        <div class="dropdown3">
+		<button onclick="myFunction3()" class="dropbtn3">APP</button>
+                <div id="myDropdown3" class="dropdown3-content">
+		<a href="app.html">All Categories & Content</a>
+		</div>
+		</div>
+		<br>
+		<br>
+		</div>
+	    </ul>
+        </div>
+    </div>
+</div>
+<script src="js/cgw.js"></script>
+<script>
+ function removeData(){
+	
+	console.log("inside remove data");
+	localStorage.removeItem('realm');	
+	localStorage.removeItem('accessToken');
+	localStorage.removeItem('userId');
+     }
+</script>
+<div class="container-fluid" id="wrapper">
+    <div id="output"></div>
+       <center> 
+          <ul class="nav nav-tabs" id="myTab">
+              <li class="active"><a href="#registration" data-toggle="tab">Req To admin</a></li>
+              <li><a href="#camngmnt" data-toggle="tab">App/Sol Activation</a></li>                            
+              <li><a href="#camngmnt1" data-toggle="tab">Master Token</a></li>              
+              <li><a href="#camngmnt2" data-toggle="tab">Create Client</a></li>                
+              <li><a href="#camngmnt3" data-toggle="tab">Secret Key</a></li>
+              <li><a href="#camngmnt4" data-toggle="tab">Auth Code</a></li>
+              <li><a href="#camngmnt5" data-toggle="tab">Access Token</a></li>
+              <li><a href="#camngmnt6" data-toggle="tab">Reg Sol</a></li>
+              <li><a href="#camngmnt7" data-toggle="tab">Map Sol</a></li>
+              <li><a href="#camngmnt8" data-toggle="tab">Add Template</a></li>
+              <li><a href="#camngmnt9" data-toggle="tab">Create Mob App</a></li>
+              <li><a href="#camngmnt10" data-toggle="tab">Access Mob App</a></li>
+	 </ul>
+          <div class="tab-content">
+              <div class="tab-pane active" id="registration" style=" border: 1px solid #ddd; border-top: none">
+                  <div class="add-node">
+                      <a href="javascript:;" data-task="create" class="btn btn-primary xcrud-action addbtn"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;Send New Solution Request To Unaas Admin</a>
+                      <div class="add-form" style="display: none">
+                          <form method="post" action="" id="form-device" style="">
+                              <fieldset id="FIELDSET_01" class="inptform1">
+
+                                  <div id="form-elem-section" style="width: 100%">
+                                      <div class="col-lg-6">
+				      
+				       <label for="partnerId" class="form-label">
+                                              Partner Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="partnerId" name="partnerId" placeholder="Partner Id" />
+				       
+				       <label for="solutiontype" class="form-label">
+                                              Solution Type
+                                          </label>
+					  <select class="form-control" id="solutiontype">
+					      <option>select solution type</option>
+                                              <option>GENERIC-SD</option>
+                                              <option>GENERIC-RELAY</option>
+                                              <option>GENERIC-DIMMER</option>
+                                              <option>GENERIC-MIXED</option>                                              
+                                          </select> 
+                                          
+					 <label for="solutionvertical" class="form-label">
+                                              Solution Vertical
+                                          </label>
+					  <select class="form-control" id="solutionvertical">
+					      <option>select solution vertical</option>
+                                              <option>smarthome</option>
+                                              <option>smartcity</option>
+                                              <option>smartretail</option>
+                                              <option>smartoffice</option>
+                                              <option>smartenergy</option>
+                                              <option>smartparking</option>
+                                              <option>smarthospital</option>                                                                                                                                                                           
+                                              <option>smartmetering</option>                                                                                                                                                                           
+                                              <option>smartbuilding</option>                                                                                                                                                                           
+                                              <option>smartlighting</option>                                                                                                                                                                           
+                                              <option>smartsecurity</option>                                                                                                                                                                          
+                                              <option>smartpeoplecounting</option>                                                                                                                                                                          
+                                              <option>smartengagement</option>                                                                                                                                                                          
+                                              <option>smartwaste</option>                                                                                                                                                                          
+                                              <option>smartagriculture</option>                                                                                                                                                                          
+                                              <option>smartgas</option>                                                                                                                                                                          
+                                              <option>smartsurveillance</option>                                                                                                                                                                          
+                                              <option>smartwater</option>                                                                                                                                                                          
+                                              <option>smartpricetags</option>                                                                                                                                                                          
+                                              <option>smartairpollution</option>                                                                                                                                                                          
+                                              <option>smartelectricity</option>                                                                                                                                                                          
+                                              <option>smartchillers</option>                                                                                                                                                                          
+                                          </select>
+					  </div>
+					  <div class="col-lg-6">
+					   <label for="SolutionFriendlyName" class="form-label">
+                                           Solution Friendly Name
+                                          </label>
+                                          <input type="text" class="reg-input" id="SolutionFriendlyName" name="SolutionFriendlyName" placeholder="Solution Friendly Name" />
+					  
+					   <label for="emailId" class="form-label">
+                                            Email Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="emailId" name="emailId" placeholder="Email Id" />				  
+				   </div></div>
+                              </fieldset>			      
+                              <div id="create">
+                                  <input type="hidden" name="token" value="67bccf10dd6b7e2350d79c3f8e52e3b7" id="INPUT_44" />
+                           <a style="text-decoration: none;color: #ffffff" class="btn btn-success savebtn" onclick="sendSolutionRequest();">Submit</a>
+                       </div>
+                          </form>
+                            </div>
+                              </div>
+                               </div>                      
+	        <div class="tab-pane fade" id="camngmnt" style=" border: 1px solid #ddd; border-top: none">
+                  <div class="add-node">
+                      <a href="javascript:;" data-task="create" class="btn btn-primary xcrud-action addbtn"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;App/Solution Activation</a>
+                      <div class="add-form" style="display: none">
+                          <form method="post" action="" id="form-device" style="">
+                              <fieldset id="FIELDSET_01" class="inptform2">
+
+                                  <div id="form-elem-section" style="width: 100%">
+                                      <div class="col-lg-6">
+				      
+				      <label for="inactiveId" class="form-label">
+                                              In Active Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="inactiveId" name="inactiveId" placeholder="In Active Id" />
+					  </div>
+                              </fieldset>			      
+                              <div id="create">
+                                  <input type="hidden" name="token" value="67bccf10dd6b7e2350d79c3f8e52e3b7" id="INPUT_44" />
+                           <a style="text-decoration: none;color: #ffffff" class="btn btn-success savebtn" onclick="appSolActivation();">Submit</a>
+                       </div>
+                          </form>
+                            </div>
+                              </div>
+				</div>
+		<div class="tab-pane fade" id="camngmnt1" style=" border: 1px solid #ddd; border-top: none">
+                  <div class="add-node">
+                     <a href="javascript:;" data-task="create" class="btn btn-primary xcrud-action addbtn"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;Get Master Token</a>
+                      <div class="add-form" style="display: none">
+                          <form method="post" action="" id="form-device" style="">
+                               <fieldset id="FIELDSET_01" class="inptform2">
+                                  <div id="form-elem-section" style="width: 100%">                                      
+                              </fieldset>			      
+                              <div id="create">                                  
+                           <a style="text-decoration: none;color: #ffffff" class="btn btn-success savebtn" onclick="getMasterToken();">Get Master Token</a>
+                       </div>
+                          </form>
+                            </div>
+                              </div>
+				</div>		      	      
+	      <div class="tab-pane fade" id="camngmnt2" style=" border: 1px solid #ddd; border-top: none">
+                  <div class="add-node">
+                      <a href="javascript:;" data-task="create" class="btn btn-primary xcrud-action addbtn"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;Create Client [Keycloak]</a>
+                      <div class="add-form" style="display: none">
+                          <form method="post" action="" id="form-device" style="">
+                               <fieldset id="FIELDSET_01" class="inptform2">
+
+                                  <div id="form-elem-section" style="width: 100%">
+                                      <div class="col-lg-6">
+				      
+				      <label for="clientId" class="form-label">
+                                              Client Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="clientId" name="clientId" placeholder="Client Id" />
+					  </div>
+                              </fieldset>			      
+                              <div id="create">
+                                  <input type="hidden" name="token" value="67bccf10dd6b7e2350d79c3f8e52e3b7" id="INPUT_44" />
+                           <a style="text-decoration: none;color: #ffffff" class="btn btn-success savebtn" onclick="createClient();">Submit</a>
+                       </div>
+                          </form>
+                            </div>
+                              </div>
+				</div>
+		<div class="tab-pane fade" id="camngmnt3" style=" border: 1px solid #ddd; border-top: none">
+                  <div class="add-node">
+                      <a href="javascript:;" data-task="create" class="btn btn-primary xcrud-action addbtn"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;Get Secret Key of Registered client</a>
+                      <div class="add-form" style="display: none">
+                          <form method="post" action="" id="form-device" style="">
+                               <fieldset id="FIELDSET_01" class="inptform2">
+
+                                  <div id="form-elem-section" style="width: 100%">
+                                      <div class="col-lg-6">
+				      
+				      <label for="client" class="form-label">
+                                              Client Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="client" name="client" placeholder="Client Id" />
+					  </div>
+                              </fieldset>			      
+                              <div id="create">
+                                  <input type="hidden" name="token" value="67bccf10dd6b7e2350d79c3f8e52e3b7" id="INPUT_44" />
+                           <a style="text-decoration: none;color: #ffffff" class="btn btn-success savebtn" onclick="getSecretKey();">Submit</a>
+                       </div>
+                          </form>
+                            </div>
+                              </div>
+		</div><div class="tab-pane fade" id="camngmnt4" style=" border: 1px solid #ddd; border-top: none">
+                  <div class="add-node">
+                      <a href="javascript:;" data-task="create" class="btn btn-primary xcrud-action addbtn"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;Get Authorization Code</a>
+                      <div class="add-form" style="display: none">
+                          <form method="post" action="" id="form-device" style="">
+                               <fieldset id="FIELDSET_01" class="inptform2">
+                                  <div id="form-elem-section" style="width: 100%">                                      
+                              </fieldset>			      
+                              <div id="create">                                  
+                           <a style="text-decoration: none;color: #ffffff" class="btn btn-success savebtn" onclick="getAuthCode();">Get Authorization Code</a>
+                       </div>
+                          </form>
+                            </div>
+                              </div>
+				</div>
+		<div class="tab-pane fade" id="camngmnt5" style=" border: 1px solid #ddd; border-top: none">
+                  <div class="add-node">
+                       <a href="javascript:;" data-task="create" class="btn btn-primary xcrud-action addbtn"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;Get Access Code</a>
+                      <div class="add-form" style="display: none">
+                          <form method="post" action="" id="form-device" style="">
+                               <fieldset id="FIELDSET_01" class="inptform2">
+                                  <div id="form-elem-section" style="width: 100%">                                      
+                              </fieldset>			      
+                              <div id="create">                                  
+                           <a style="text-decoration: none;color: #ffffff" class="btn btn-success savebtn" onclick="getAccessCode();">Get Access Code</a>
+                       </div>
+                          </form>
+                            </div>
+                              </div>
+				</div>
+		<div class="tab-pane fade" id="camngmnt6" style=" border: 1px solid #ddd; border-top: none">
+                  <div class="add-node">
+                      <a href="javascript:;" data-task="create" class="btn btn-primary xcrud-action addbtn"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;Solution Register</a>
+                      <div class="add-form" style="display: none">
+                          <form method="post" action="" id="form-device" style="">
+				<fieldset id="FIELDSET_01" class="inptform5">
+
+                                  <div id="form-elem-section" style="width: 100%">
+                                      <div class="col-lg-6">				         
+					 
+				        <label for="pId" class="form-label">
+                                              Partner Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="pId" name="pId" placeholder="Partner Id" />
+					  
+					<label for="stgwid" class="form-label">
+                                              Standard Gateway Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="stgwid" name="stgwid" placeholder="Standard Gateway Id" />
+					   </div>
+					  <div class="col-lg-6">
+					<label for="sId" class="form-label">
+                                              Solution Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="sId" name="sId" placeholder="Solution Id" />
+					  </div>
+                              </fieldset>			      
+                              <div id="create">
+                                  <input type="hidden" name="token" value="67bccf10dd6b7e2350d79c3f8e52e3b7" id="INPUT_44" />
+                           <a style="text-decoration: none;color: #ffffff" class="btn btn-success savebtn" onclick="solutionRegistration();">Submit</a>
+                       </div>
+                          </form>
+                            </div>
+                              </div>                  
+                                 </div>
+		<div class="tab-pane fade" id="camngmnt7" style=" border: 1px solid #ddd; border-top: none">
+                  <div class="add-node">
+                      <a href="javascript:;" data-task="create" class="btn btn-primary xcrud-action addbtn"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;Map Cloud Connector</a>
+                      <div class="add-form" style="display: none">
+                          <form method="post" action="" id="form-device" style="">
+				<fieldset id="FIELDSET_01" class="inptform2">
+
+                                  <div id="form-elem-section" style="width: 100%">
+                                      <div class="col-lg-6">				       
+					  
+					<label for="solutnId" class="form-label">
+                                              Solution Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="solutnId" name="solutnId" placeholder="Solution Id" />
+					  </div>
+					  <div class="col-lg-6">
+					  <label for="soltype" class="form-label">
+                                              Cloud Type
+                                          </label>					  
+					  <select class="form-control" id="soltype">
+					      <option>select cloud connector</option>
+                                              <option>awsiot</option>
+                                              <option>iotee</option>
+                                              <option>emqtt</option>
+                                              <option>tata</option>                                                                                                                                                                                                                     
+                                              <option>ibmiot</option>                                                                                                                                                                                                                     
+                                          </select>
+					  </div>
+                              </fieldset>			      
+                              <div id="create">
+                                  <input type="hidden" name="token" value="67bccf10dd6b7e2350d79c3f8e52e3b7" id="INPUT_44" />
+                           <a style="text-decoration: none;color: #ffffff" class="btn btn-success savebtn" onclick="mapsolutionwithcloudconnector();">Submit</a>
+                       </div>
+                          </form>
+                            </div>
+                              </div>                  
+                                 </div>
+		<div class="tab-pane fade" id="camngmnt8" style=" border: 1px solid #ddd; border-top: none">
+                  <div class="add-node">
+                      <a href="javascript:;" data-task="create" class="btn btn-primary xcrud-action addbtn"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;Add Template</a>
+                      <div class="add-form" style="display: none">
+                          <form method="post" action="" id="form-device" style="">
+				<fieldset id="FIELDSET_01" class="inptform5">
+
+                                  <div id="form-elem-section" style="width: 100%">
+                                      <div class="col-lg-6">
+				      
+				         <input id="fileContainer" type="file">
+					 
+				        <label for="solId" class="form-label">
+                                              Solution Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="solId" name="solId" placeholder="Solution Id" />
+					 
+					  <label for="templateId" class="form-label">
+                                              Template Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="templateId" name="templateId" placeholder="Template Id" />				
+					  </div>
+					  <div class="col-lg-6">
+					  <label for="templatetype" class="form-label">
+                                              Template Type
+                                          </label>
+					  <select class="form-control" id="templatetype">
+					      <option>select template type</option>
+					      <option>PARKING-SPACE</option>
+					      <option>LIGHT</option>
+                                              <option>GENERIC-SD</option>
+                                              <option>GENERIC-RELAY</option>
+                                              <option>GENERIC-DIMMER</option>
+                                              <option>GENERIC-MIXED</option>                                              
+                                          </select>
+					  </div>
+                              </fieldset>			      
+                              <div id="create">
+                                  <input type="hidden" name="token" value="67bccf10dd6b7e2350d79c3f8e52e3b7" id="INPUT_44" />
+                           <a style="text-decoration: none;color: #ffffff" class="btn btn-success savebtn" onclick="addTemplate();">Submit</a>
+                       </div>
+                          </form>
+                            </div>
+                              </div>                  
+                                 </div>
+		<div class="tab-pane fade" id="camngmnt9" style=" border: 1px solid #ddd; border-top: none">
+                  <div class="add-node">
+                      <a href="javascript:;" data-task="create" class="btn btn-primary xcrud-action addbtn"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;Create Mobile Website</a>
+                      <div class="add-form" style="display: none">
+                          <form method="post" action="" id="form-device" style="">
+                               <fieldset id="FIELDSET_01" class="inptform2">
+
+                                  <div id="form-elem-section" style="width: 100%">                                      
+                              </fieldset>			      
+                              <div id="create">
+			<a style="text-decoration: none;color: #ffffff" class="btn btn-success savebtn" onclick="createmobilewebsiteImplicit();">Solution/PMW-Server</a>
+                       </div>
+                          </form>
+                            </div>
+                              </div>                  
+				</div>
+		<div class="tab-pane fade" id="camngmnt10" style=" border: 1px solid #ddd; border-top: none">
+                  <div class="add-node">
+                      <a href="javascript:;" data-task="create" class="btn btn-primary xcrud-action addbtn"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;Access Mobile Website</a>
+                      <div class="add-form" style="display: none">
+                          <form method="post" action="" id="form-device" style="">
+                               <fieldset id="FIELDSET_01" class="inptform2">
+
+                                  <div id="form-elem-section" style="width: 100%">                                      
+                              </fieldset>			      
+                              <div id="create">                                  
+                           <a style="text-decoration: none;color: #ffffff" class="btn btn-success savebtn" onclick="accessmobilewebsiteImplicit();">Access Mobile Website Token</a>
+                       </div>
+                          </form>
+                            </div>
+                              </div>                  
+				</div>
+				   </div>
+				   </div>
+				   </div>
+<script src="js/indexlogin.js"></script>
+   </div>    
+    <div class="footer">
+	<div class="">
+	<p class="">&copy; 2016 U-NaaS. All rights reserved</p>
+	</div>
+   </div>
+  <script src="js/mows.js"></script>
+  <script src="js/main.js"></script>
+  </center>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/bootbox.min.js"></script>
+      <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+      <script src="js/dataTable.js"></script>
+      <script src="js/dataTable.bootstrap.js"></script>
+
+      <script src="js/common.js"></script>
+      <script src="js/mobileWebApp.js"></script>
+      <script type="text/javascript">
+
+      $(document).ready(function() {
+
+          $('#actiontable').dataTable( {
+              "aoColumnDefs": [
+                  { 'bSortable': false, 'aTargets': [ 2 ] }
+              ]
+          });
+
+          $('#variablelist').dataTable( {
+              "aoColumnDefs": [
+                  { 'bSortable': false, 'aTargets': [ 2,3,4,5,7,8 ] }
+              ]
+          });
+
+          $('.addbtn').on('click',function() {
+                $('.add-form').slideToggle();
+
+          });
+
+          $('.savebtn').on('click',function() {
+              $('.add-form').slideUp();
+
+          });
+
+          $('.addplatformbtn').on('click',function() {
+                $('.add-platform').slideToggle();
+
+          });
+
+          $('.actionsavebtn').on('click',function() {
+              $('.add-action-form').slideUp();
+
+          });
+
+          $('.addvariablebtn').on('click',function() {
+                $('.add-variable').slideToggle();
+
+          });
+
+          $('.savevariablebtn').on('click',function() {
+              $('.add-variable').slideUp();
+
+          });
+
+          $("input:radio[name='vrange']").click(function() {
+             if($(this).val() == 'range') {
+                 $('.range-input').show();
+
+             }
+              else {
+                 $('.range-input').hide();
+
+             }
+
+          });
+      });
+      
+      function removeData(){
+	
+	console.log("inside remove data");
+	localStorage.removeItem('realm');	
+	localStorage.removeItem('accessToken');
+     } 
+
+	$('input#fileContainer').on('change', function () {
+	    console.log(this);
+
+	    var reader = new FileReader();
+	    reader.onload = function () {
+		var dataResponse = reader.result;
+		localStorage.setItem('data', dataResponse);
+	    };
+	    reader.readAsDataURL(this.files[0]);
+  }); 
+        var usrid = localStorage.getItem('userId');
+	console.log("userId.... " +usrid);
+	document.getElementById("demo").innerHTML = usrid;  
+</script>
+</body>
+</html>

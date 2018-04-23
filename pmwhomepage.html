@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>UNAAS</title>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>  
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>    
+<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">  
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css"> 
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">        		
+
+<script type="text/javascript">
+
+		       $(document).ready(function(){
+		       var currentUrl = window.location.href;
+		       var authorizationCode = currentUrl.substring(currentUrl.indexOf('code=')+5);
+		       localStorage.setItem('authorizationCode',authorizationCode);
+			console.log("authorizationCode .... "+authorizationCode); 	   
+		       getAccessToken();	   
+		       createSolutionWebsite();
+});
+
+function getAccessToken(){
+	
+			var realmId = localStorage.getItem('realmId');
+			var clientId = localStorage.getItem('client');
+			var authorizationCode = localStorage.getItem('authorizationCode');
+			var client_secret = localStorage.getItem('clientSecret');
+				console.log("realm====> "+realmId);
+				console.log("client====> "+clientId);	
+			var requestbody ='authorization_code='+authorizationCode+'&client_secret='+client_secret+'&redirect_uri=';   	
+        $.ajax({
+			type: "POST",
+			url: authbackend+'/AuthBackEndGw/getTokenforAuthCode/'+realmId+'/'+clientId,
+			contentType:'application/json',
+			crossDomain: true,
+			processData: false,
+			data: requestbody,        
+		}).done(function(json) {
+       
+			var responsebody = JSON.stringify(json);	 
+			var jsonobject = JSON.parse(responsebody);			      
+			var accessToken = jsonobject.access_token;	
+			var refreshToken = jsonobject.refresh_token;			 
+				console.log("accessToken....  "+accessToken);
+				console.log("refreshToken....  "+refreshToken);
+			localStorage.setItem('accessToken',accessToken);
+			localStorage.setItem('refreshToken',refreshToken);
+                }).error(function() {
+				console.log("In side error part");
+		}).complete(function() {                              
+                });
+}	
+
+function createSolutionWebsite(){
+	
+			var realmId = localStorage.getItem('realmId');
+			var clientId = localStorage.getItem('client');
+			var access_token = localStorage.getItem('accessToken');
+			var refresh_token = localStorage.getItem('refreshToken');
+			var privateid = clientId.toLowerCase();
+				console.log("realm====> "+realmId);
+				console.log("client====> "+clientId);	
+			var requestbody = JSON.stringify({
+				      "access_token":access_token,
+				      "refresh_token":refresh_token
+				});			  
+        $.ajax({
+			type: "POST",
+			url: pmwPath+'/PublicMobileWebsite/login/websiteSolution/'+realmId+'/'+clientId+"@unaas.com",
+			contentType:'application/json',
+			crossDomain: true,
+			processData: false,
+			data: requestbody,        
+                }).done(function(xml) {  
+				console.log("In side done part ::"+xml);
+			var link = pmwPath+"/MW/"+clientId+"/"+privateid+"personalise/index.html";	
+			window.location.href = link;   
+		}).error(function() {
+				console.log("In side error part");
+		}).complete(function() {                              
+		});
+}			
+</script>
+<script src="js/common.js"></script>
+</head>
+<body>
+</body>
+</html>

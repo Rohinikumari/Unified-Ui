@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+    <title>Spot</title>
+	<!-- CSS for jquery table -->
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	 <!-- Bootstrap Fileupload CSS
+	 <link href="css/fileinput.min.css" rel="stylesheet"> -->
+    <!-- Custom styles for this template -->
+    <link href="css/signup.css" rel="stylesheet">
+    <link href="css/inventorylanding.css" rel="stylesheet">
+    <link href="css/landing.css" rel="stylesheet">
+    <link href="css/datatables.css" rel="stylesheet">
+    <link href="css/cgw.css" rel="stylesheet">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <!--<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css"> -->
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]>
+  <!-->
+   </head>
+<style>
+#demo {
+    text-align: right;
+    color: white;
+}
+</style>
+  <body class="landing-body">
+      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+          <div class="container">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+<p class="logo"><a href="http://13.250.24.178:3500/login.html"><button onclick="removeData();"><img align = "left" alt="" src = "/img/logout.png" height = "15" width = "15"></button>
+</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unified UI</p><p id="demo"></p>
+<script>                                 
+</script>                 
+              <div class="navbar-collapse navbar-ex1-collapse collapse" style="height: 1px;">
+              </div>
+               <ul class="nav nav-sidebar navbar-inverse side-nav">
+	       <div class="scroll">
+	       
+             <div class="dropdown">
+		<button onclick="myFunction()" class="dropbtn">STANDARD DEVICE CLOUD GATEWAY</button>
+		<div id="myDropdown" class="dropdown-content">
+		<a href="CloudProvisioning.html">Cloud Provisioning</a>
+		<a href="solutionProvisioning.html">Solution Provisioning</a>
+		<a href="DeviceProvisioningOrInventory.html">Device Provisioning/Inventory</a>
+		<a href="localtestdemo.html">Local Operation (EMQTT)</a>
+		<a href="remoteoperationdemo.html">Remote Operation (DCG)</a>
+                <a href="registrationGateway.html">Registration via API Gateway</a>
+		<a href="registration.html">Direct Standard Gateway Registration</a>
+		<br>		
+		<div class="dropdown2">		
+		<button onclick="myFunction2()" class="dropbtn2">PONTE APPS</button>
+                <div id="myDropdown2" class="dropdown2-content">
+		<a href="PartnerTesting.html">Admin Testing with Ponte</a>
+		<a href="operatorTesting.html">Operator Testing with Ponte</a>
+		<a href="solutionTesting.html">Solution Testing with Ponte</a>
+		<a href="Solution&NodeTesting.html">Solution and Node Testing with Ponte</a>
+		<a href="NodeTesting.html">Nodes Testing with Ponte</a>
+		</div>
+		</div>
+                <div class="dropdown11">
+		<button onclick="location.href=''" class="dropbtn11">TCP/IP ADAPTER APPS</button>
+                <div id="myDropdown11" class="dropdown11-content">
+		</div>
+		</div>		
+		</div> 
+		</div>
+		<br>
+		<br>
+		<div class="dropdown22">
+		<button onclick="myFunction22()" class="dropbtn22">SOL DEVELOPMENT(AUTH CODE)</button>
+                <div id="myDropdown22" class="dropdown22-content">
+		<a href="webAppAccessWithoutSecretKey.html">MOBILE WEB APP ACCESS WITHOUT SECRET KEY</a>
+		<a href="webAppAccessWithSecretKey.html">MOBILE WEB APP ACCESS WITH SECRET KEY</a>
+		<a href="mobilewebappCreationandAccessGrant.html">MOBILE WEB APP CREATION AND TESTING (AUTH GRANT FLOW)</a>
+		<div class="dropdown24">
+		<button onclick="myFunction24()" class="dropbtn24">MOBILE NATIVE APP</button>
+                <div id="myDropdown24" class="dropdown24-content">
+		<a href="">Get Authorization Code</a>	
+		<a href="">Get Access Token</a>	
+		<a href="">Call Other Api's For Mobile App Development</a>	
+		</div>
+		</div>
+		<div class="dropdown19">
+		<button onclick="myFunction19()" class="dropbtn19">MOBILE HYBRID APP</button>
+                <div id="myDropdown19" class="dropdown19-content">
+		<a href="deviceRegister.html">Device Registration</a>
+		<a href="appRegister.html">App Registration</a>
+		<a href="appSolActivation.html">App/Solution Activation</a>
+		<a href="getAuthorizationCode.html">Get Authorization Code</a>	
+		<a href="getAccessToken.html">Get Access Token</a>	
+		<a href="mobilewebsite.html">Create Mobile Website</a>
+		<a href="accessCreatedMobileWebsite.html">Access Created Mobile Website</a>
+		</div>
+		</div>
+		</div>
+		</div>
+		<br>
+		<br>
+		<div class="dropdown26">
+		<button onclick="myFunction26()" class="dropbtn26">SOL DEVELOPMENT(IMPLICIT)</button>
+                <div id="myDropdown26" class="dropdown26-content">
+		<a href="mobilewebappImplicit.html">MOBILE WEB APP CREATION AND TESTING (IMPLICIT)</a>	
+		</div>
+		</div>
+		<br>
+		<br>
+		<div class="dropdown20">
+		<button onclick="myFunction20()" class="dropbtn20">MY RESOURCES</button>
+                <div id="myDropdown20" class="dropdown20-content">
+		<a href="mySolutions.html">My Solutions</a>	
+		<a href="mysites.html">My Sites</a>	
+		<a href="mydevices.html">My Devices</a>	
+		</div>
+		</div>
+		<br>
+		<br>		
+		<div class="dropdown9">
+		<button onclick="myFunction9()" class="dropbtn9">ONE M2M SERVICE</button>
+                <div id="myDropdown9" class="dropdown9-content">
+		<div class="dropdown6">
+		<button onclick="myFunction6()" class="dropbtn6">DCG APPS</button>
+                <div id="myDropdown6" class="dropdown6-content">
+		<a href="partnerTestingDCG.html">Admin Testing with DCG</a>
+                <a href="operatorTestingDCG.html">Operator Testing with DCG</a>
+		<a href="solutionTestingDCG.html">Solution Testing with DCG</a>
+		<a href="solution&nodesTestingDCG.html">Solution and Nodes Testing with DCG</a>
+		<a href="nodesTestingDCG.html">Node Testing with DCG</a>
+		</div>
+		</div>
+		<div class="dropdown10">
+		<button onclick="myFunction10()" class="dropbtn10">OTA</button>
+                <div id="myDropdown10" class="dropdown10-content">
+		<a href="">Firmware pending update</a>
+		<a href="">Software pending update</a>
+               	</div>
+		</div>
+		<div class="dropdown8">
+		<button onclick="myFunction8()" class="dropbtn8">SDP</button>
+                <div id="myDropdown8" class="dropdown8-content">
+		</div>
+		</div>
+		</div>
+		<br>
+		<br>		
+		<div class="dropdown16">
+		<button onclick="myFunction16()" class="dropbtn16">SITE INSTALLER</button>
+                <div id="myDropdown16" class="dropdown16-content">
+		<a href="spot.html">Spot</a>
+		<a href="lot.html">Lot</a>
+                <a href="remoteaccessvalidation.html">Remote Access Validation</a>		
+		</div>
+		</div>
+		<br>
+		<br>
+	        <div class="dropdown3">
+		<button onclick="myFunction3()" class="dropbtn3">APP</button>
+                <div id="myDropdown3" class="dropdown3-content">
+		<a href="app.html">All Categories & Content</a>
+		</div>
+		</div>
+		<br>
+		<br>
+		</div>
+	    </ul>
+        </div>
+    </div>
+</div>
+<script src="js/cgw.js"></script>
+<div class="container-fluid" id="wrapper">
+    <div id="output"></div>
+       <center> 
+          <ul class="nav nav-tabs" id="myTab">
+              <li class="active"><a href="#nodes" data-toggle="tab">Add Spot</a></li>
+	      <li><a href="#camngmnt1" data-toggle="tab">Get Spots</a></li>	      
+              <li><a href="#camngmnt2" data-toggle="tab">Get Spot Info</a></li>              
+              <li><a href="#camngmnt3" data-toggle="tab">Get Site Spot Info</a></li>                           
+              <li><a href="#camngmnt4" data-toggle="tab">Get All Spots Info</a></li>              
+              <li><a href="#camngmnt5" data-toggle="tab">Map Spot</a></li>             
+              <li><a href="#camngmnt6" data-toggle="tab">Unmap Spot</a></li>            
+              <li><a href="#camngmnt7" data-toggle="tab">Update Spot</a></li>           
+              <li><a href="#camngmnt8" data-toggle="tab">Delete Spot</a></li>           
+          </ul>
+          <div class="tab-content">
+              <div class="tab-pane active" id="nodes" style=" border: 1px solid #ddd; border-top: none">
+                  <div class="add-node">
+                      <a href="javascript:;" data-task="create" class="btn btn-primary xcrud-action addbtn"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;Add Spot</a>
+                      <div class="add-form" style="display: none">
+                          <form method="post" action="" id="form-device" style="">
+                              <fieldset id="FIELDSET_01" class="inptform3">
+
+                                  <div id="form-elem-section" style="width: 100%" >
+                                      <div class="col-lg-6">
+				      
+				      <label for="siteId" class="form-label">
+                                              Site Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="siteId" name="siteId" placeholder="Site Id" />
+				      			        
+					<label for="spotId" class="form-label">
+                                              Spot Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="spotId" name="spotId" placeholder="Spot Id" />
+                            
+			                  <label for="spotfriendlyname" class="form-label">
+                                            Spot Friendly Name
+                                          </label>
+                                          <input type="text" class="reg-input" id="spotfriendlyname" name="spotfriendlyname" placeholder="Spot Friendly Name" />
+					  
+					   <label for="spotownername" class="form-label">
+                                            Spot Owner Name
+                                          </label>
+                                          <input type="text" class="reg-input" id="spotownername" name="spotownername" placeholder="Spot Owner Name" />
+					  					                                          
+					  <label for="violations" class="form-label">
+                                             Violations
+                                          </label>
+                                          <select class="form-control" id="violations">
+                                              <option>Coming soon</option>                                                                                                                              
+                                          </select>
+					  
+					  <label for="usetime" class="form-label">
+                                             Use Time
+                                          </label>
+                                          <select class="form-control" id="usetime">
+                                              <option>Day Time</option>                                                                                                                              
+                                              <option>Night Time</option>                                                                                                                              
+                                              <option>Whole Day</option>                                                                                                                              
+                                              <option>Whole Week</option>                                                                                                                             
+                                              <option>Whole Month</option>                                                                                                                             
+                                              <option>Whole Year</option>                                                                                                                             
+                                          </select>
+					  
+                                         <label for="layoutname" class="form-label">
+                                           Layout Name
+                                          </label>
+                                          <input type="text" class="reg-input" id="layoutname" name="layoutname" placeholder="Layout Name" />
+					  
+					  </div>
+					  <div class="col-lg-6">
+					   <label for="latitude" class="form-label">
+                                            Latitude
+                                          </label>
+                                          <input type="text" class="reg-input" id="latitude" name="latitude" placeholder="Latitude" />
+					  
+					   <label for="longitude" class="form-label">
+                                            Longitude
+                                          </label>
+                                          <input type="text" class="reg-input" id="longitude" name="longitude" placeholder="Longitude" />
+					  
+                                          <label for="altitude" class="form-label">
+                                             Altitude
+                                          </label>
+                                          <input type="text" class="reg-input" id="altitude" name="altitude" placeholder="Altitude" />
+					  
+					  <label for="cost" class="form-label">
+                                            Cost
+                                          </label>
+                                          <input type="text" class="reg-input" id="cost" name="cost" placeholder="Cost" />					  
+					  
+					   <label for="usagetime" class="form-label">
+                                           Usage Time
+                                          </label>
+                                          <input type="text" class="reg-input" id="usagetime" name="usagetime" placeholder="Usage Time" />
+					 
+					 <label for="lot" class="form-label">
+                                            LOT
+                                          </label>
+                                          <input type="text" class="reg-input" id="lot" name="lot" placeholder="LOT" />							  
+					  				          			  
+					   <label for="zone" class="form-label">
+                                           Zone
+                                          </label>
+                                          <input type="text" class="reg-input" id="zone" name="zone" placeholder="Zone" />					   					  
+                                      </div>
+                                  </div>
+                              </fieldset>
+                             <div id="create">
+                                  <input type="hidden" name="token" value="" id="INPUT_44" />
+                           <a style="text-decoration: none;color: #ffffff" class="btn btn-success savebtn" onclick="addSpot();">Submit</a>
+                       </div>			      
+			  </form>
+                            </div>
+                              </div>                   
+                               </div>
+		      <div class="tab-pane fade" id="camngmnt1" style=" border: 1px solid #ddd; border-top: none">
+                  <div class="add-node">
+                      <a href="javascript:;" data-task="create" class="btn btn-primary xcrud-action addbtn"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;Get Spots</a>
+                      <div class="add-form" style="display: none">
+                          <form method="post" action="" id="form-device" style="">
+                              <fieldset id="FIELDSET_01" class="inptform2">
+
+                                  <div id="form-elem-section" style="width: 100%">
+                                      <div class="col-lg-6">
+				      
+				      <label for="stid" class="form-label">
+                                              Site Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="stid" name="stid" placeholder="Site Id" />
+					  </div>
+                              </fieldset>			      
+                              <div id="create">
+                                  <input type="hidden" name="token" value="67bccf10dd6b7e2350d79c3f8e52e3b7" id="INPUT_44" />
+                           <a style="text-decoration: none;color: #ffffff" class="btn btn-success savebtn" onclick="getSpots();">Submit</a>
+                       </div>
+                          </form>
+                            </div>
+                              </div>
+                  <div class="row">
+                      <div class="col-lg-14">
+                          <div class="panel panel-default">
+
+                              <!-- /.panel-heading -->
+                              <div class="panel-body">
+                                  <div class="table-responsive">
+                                      <div id="dataTables-example_wrapper" class="dataTables_wrapper form-inline" role="grid">
+
+           <table id="getSptslist" class="display table table-striped table-bordered table-hover dataTable no-footer" cellspacing="0" width="100%">
+                                              <thead>
+                                              <tr>
+					          <th style="width:1150px">Spot Id</th>
+					          <th style="width:1150px">Friendly Name</th>
+						  <th></th>                                                
+						  <th></th>                                                
+                                              </tr>
+                                              </thead>                                            
+                                          </table>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+	      <div class="tab-pane fade" id="camngmnt2" style=" border: 1px solid #ddd; border-top: none">
+                  <div class="add-node">
+                      <a href="javascript:;" data-task="create" class="btn btn-primary xcrud-action addbtn"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;Get Spot Info</a>
+                      <div class="add-form" style="display: none">
+                          <form method="post" action="" id="form-device" style="">
+                              <fieldset id="FIELDSET_01" class="inptform2">
+
+                                  <div id="form-elem-section" style="width: 100%">
+                                      <div class="col-lg-6">
+				      
+				      <label for="sptId" class="form-label">
+                                              Spot Id
+                                          </label>
+				      <input type="text" class="reg-input" id="sptId" name="sptId" placeholder="Spot Id" />
+				</div>
+                              </fieldset>			      
+                              <div id="create">
+			<input type="hidden" name="token" value="67bccf10dd6b7e2350d79c3f8e52e3b7" id="INPUT_44" />
+                           <a style="text-decoration: none;color: #ffffff" class="btn btn-success savebtn" onclick="getSpotInfo();">Submit</a>
+                       </div>
+                          </form>
+                            </div>
+                              </div>
+                  <div class="row">
+                      <div class="col-lg-14">
+                          <div class="panel panel-default">
+
+                              <!-- /.panel-heading -->
+                              <div class="panel-body">
+                                  <div class="table-responsive">
+                                      <div id="dataTables-example_wrapper" class="dataTables_wrapper form-inline" role="grid">
+
+           <table id="nodelist" class="display table table-striped table-bordered table-hover dataTable no-footer" cellspacing="0" width="100%">
+                                              <thead>
+                                              <tr>
+					          <th>Spot Id</th>
+					          <th>Spot Owner Name</th>
+						  <th>Spot Friendly Name</th>
+                                                  <th>Latitude</th>
+                                                  <th>Longitude</th>
+                                                  <th>Altitude</th>						  
+					      </tr>
+                                              </thead>                                            
+                                          </table>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+	      <div class="tab-pane fade" id="camngmnt3" style=" border: 1px solid #ddd; border-top: none">
+                  <div class="add-node">
+                      <a href="javascript:;" data-task="create" class="btn btn-primary xcrud-action addbtn"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;Get Site Spot Info</a>
+                      <div class="add-form" style="display: none">
+                          <form method="post" action="" id="form-device" style="">
+                              <fieldset id="FIELDSET_01" class="inptform2">
+
+                                  <div id="form-elem-section" style="width: 100%">
+                                      <div class="col-lg-6">
+				      
+				      <label for="steId" class="form-label">
+                                              Site Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="steId" name="steId" placeholder="Site Id" />
+					   					  
+					  </div>
+					  <div class="col-lg-6">
+					   <label for="spId" class="form-label">
+                                              Spot Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="spId" name="spId" placeholder="Spot Id" />
+					  </div>
+                              </fieldset>			      
+                              <div id="create">
+                                  <input type="hidden" name="token" value="67bccf10dd6b7e2350d79c3f8e52e3b7" id="INPUT_44" />
+                           <a style="text-decoration: none;color: #ffffff" class="btn btn-success savebtn" onclick="getSiteSpotInfo();">Submit</a>
+                       </div>
+                          </form>
+                            </div>
+                              </div>
+                  <div class="row">
+                      <div class="col-lg-14">
+                          <div class="panel panel-default">
+
+                              <!-- /.panel-heading -->
+                              <div class="panel-body">
+                                  <div class="table-responsive">
+                                      <div id="dataTables-example_wrapper" class="dataTables_wrapper form-inline" role="grid">
+
+           <table id="getSiteSpotlist" class="display table table-striped table-bordered table-hover dataTable no-footer" cellspacing="0" width="100%">
+                                              <thead>
+                                              <tr>
+					          <th>Spot Id</th>
+						  <th>Friendly Name</th>
+					          <th>Spot Owner Name</th>
+						  <th></th>                                                  
+                                              </tr>
+                                              </thead>                                            
+                                          </table>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+	      <div class="tab-pane fade" id="camngmnt4" style=" border: 1px solid #ddd; border-top: none">
+                  <div class="add-node">
+                      <a href="javascript:;" data-task="create" class="btn btn-primary xcrud-action addbtn"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;Get All Spots Info</a>
+                      <div class="add-form" style="display: none">
+                          <form method="post" action="" id="form-device" style="">
+                              <fieldset id="FIELDSET_01" class="inptform2">
+
+                                  <div id="form-elem-section" style="width: 100%">
+                                      <div class="col-lg-6">
+				      
+				      <label for="sid" class="form-label">
+                                              Site Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="sid" name="sid" placeholder="Site Id" />
+					  </div>
+                              </fieldset>			      
+                              <div id="create">
+                                  <input type="hidden" name="token" value="67bccf10dd6b7e2350d79c3f8e52e3b7" id="INPUT_44" />
+                           <a style="text-decoration: none;color: #ffffff" class="btn btn-success savebtn" onclick="getAllSpots();">Submit</a>
+                       </div>
+                          </form>
+                            </div>
+                              </div>
+                  <div class="row">
+                      <div class="col-lg-14">
+                          <div class="panel panel-default">
+
+                              <!-- /.panel-heading -->
+                              <div class="panel-body">
+                                  <div class="table-responsive">
+                                      <div id="dataTables-example_wrapper" class="dataTables_wrapper form-inline" role="grid">
+
+           <table id="getAllSpotlist" class="display table table-striped table-bordered table-hover dataTable no-footer" cellspacing="0" width="100%">
+                                              <thead>
+                                              <tr>
+					          <th>Spot Id</th>
+					          <th>Friendly Name</th>
+						  <th>Spot Owner Name</th>
+                                                  <th></th>
+                                                  <th></th>
+                                                  <th></th>
+                                              </tr>
+                                              </thead>                                            
+                                          </table>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+		</div>
+	    </div>
+		<div class="tab-pane fade" id="camngmnt5" style=" border: 1px solid #ddd; border-top: none">
+		<div class="add-node">
+                      <a href="javascript:;" data-task="create" class="btn btn-primary xcrud-action addbtn"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;Map Spot To Device</a>
+                      <div class="add-form" style="display: none">
+                          <form method="post" action="" id="form-device" style="">
+                              <fieldset id="FIELDSET_01" class="inptform1">
+
+                                  <div id="form-elem-section" style="width: 100%" >
+                                      <div class="col-lg-6">
+				      
+				      <label for="sI" class="form-label">
+                                              Site Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="sI" name="sI" placeholder="Site Id" />
+				       
+				       <label for="devId" class="form-label">
+                                            Device Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="devId" name="devId" placeholder="Device Id" />	
+				       				      
+				        </div>
+					  <div class="col-lg-6">					  
+					   <label for="sp" class="form-label">
+                                            Spot Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="sp" name="sp" placeholder="Spot Id" />	
+
+					  <label for="catype" class="form-label">
+                                              Category
+                                          </label>
+                                          <select class="form-control" id="catype">
+                                              <option>SMARTDEVICE</option>
+                                              <option>LEGACYDEVICE</option>
+                                              <option>LTNDEVICE</option>
+                                              <option>GATEWAYDEVICE</option>                                                                                   
+                                          </select>  
+	
+                                      </div>
+                                  </div>
+                              </fieldset>
+                             <div id="create">
+                                  <input type="hidden" name="token" value="" id="INPUT_44" />
+                           <a style="text-decoration: none;color: #ffffff" class="btn btn-success savebtn" onclick="mapSpot();">Submit</a>
+                       </div>			      
+			  </form>
+                            </div>
+                              </div>
+                                </div>
+		<div class="tab-pane fade" id="camngmnt6" style=" border: 1px solid #ddd; border-top: none">
+		<div class="add-node">
+                      <a href="javascript:;" data-task="create" class="btn btn-primary xcrud-action addbtn"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;Unmap Spot From Device</a>
+                      <div class="add-form" style="display: none">
+                          <form method="post" action="" id="form-device" style="">
+                               <fieldset id="FIELDSET_01" class="inptform1">
+
+                                  <div id="form-elem-section" style="width: 100%" >
+                                      <div class="col-lg-6">
+				      
+				      <label for="sd" class="form-label">
+                                              Site Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="sd" name="sd" placeholder="Site Id" />
+				       
+				       <label for="dId" class="form-label">
+                                            Device Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="dId" name="dId" placeholder="Device Id" />	
+				       				      
+				        </div>
+					  <div class="col-lg-6">					  
+					   <label for="spotd" class="form-label">
+                                            Spot Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="spotd" name="spotd" placeholder="Spot Id" />	
+
+					  <label for="caty" class="form-label">
+                                              Category
+                                          </label>
+                                          <select class="form-control" id="caty">
+                                              <option>SMARTDEVICE</option>
+                                              <option>LEGACYDEVICE</option>
+                                              <option>LTNDEVICE</option>
+                                              <option>GATEWAYDEVICE</option>                                                                                   
+                                          </select>  
+	
+                                      </div>
+                                  </div>
+                              </fieldset>
+                             <div id="create">
+                                  <input type="hidden" name="token" value="" id="INPUT_44" />
+                           <a style="text-decoration: none;color: #ffffff" class="btn btn-success savebtn" onclick="unmapSpot();">Submit</a>
+                       </div>			      
+			  </form>
+                            </div>
+                              </div>
+                                </div>
+	     <div class="tab-pane fade" id="camngmnt7" style=" border: 1px solid #ddd; border-top: none">
+		<div class="add-node">
+                      <a href="javascript:;" data-task="create" class="btn btn-primary xcrud-action addbtn"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;Update Spot</a>
+                      <div class="add-form" style="display: none">
+                          <form method="post" action="" id="form-device" style="">
+                               <fieldset id="FIELDSET_01" class="inptform3">
+
+                                  <div id="form-elem-section" style="width: 100%">
+                                      <div class="col-lg-6">
+				      
+				      <label for="stI" class="form-label">
+                                              Site Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="stI" name="stI" placeholder="Site Id" />
+				      		
+                                          <label for="ltde" class="form-label">
+                                            Latitude
+                                          </label>
+                                          <input type="text" class="reg-input" id="ltde" name="ltde" placeholder="Latitude" />						
+					       
+                                          <label for="altude" class="form-label">
+                                             Altitude
+                                          </label>
+                                          <input type="text" class="reg-input" id="altude" name="altude" placeholder="Altitude" />   
+			                  					  
+					   <label for="sptownrname" class="form-label">
+                                            Spot Owner Name
+                                          </label>
+                                          <input type="text" class="reg-input" id="sptownrname" name="sptownrname" placeholder="Spot Owner Name" />
+					  					                                          
+					  <label for="violatns" class="form-label">
+                                             Violations
+                                          </label>
+                                          <select class="form-control" id="violatns">
+                                              <option>Coming soon</option>                                                                                                                              
+                                          </select>
+					  
+					  <label for="usetm" class="form-label">
+                                             Use Time
+                                          </label>
+                                          <select class="form-control" id="usetm">
+                                              <option>Day Time</option>                                                                                                                              
+                                              <option>Night Time</option>                                                                                                                              
+                                              <option>Whole Day</option>                                                                                                                              
+                                              <option>Whole Week</option>                                                                                                                             
+                                              <option>Whole Month</option>                                                                                                                             
+                                              <option>Whole Year</option>                                                                                                                             
+                                          </select>                                        
+					  
+					  </div>
+					  <div class="col-lg-6">
+					  <label for="stiD" class="form-label">
+                                              Spot Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="stiD" name="stiD" placeholder="Spot Id" />					  
+					  
+					   <label for="longitde" class="form-label">
+                                            Longitude
+                                          </label>
+                                          <input type="text" class="reg-input" id="longitde" name="longitde" placeholder="Longitude" />
+					                                
+					  
+					  <label for="cst" class="form-label">
+                                            Cost
+                                          </label>
+                                          <input type="text" class="reg-input" id="cst" name="cst" placeholder="Cost" />					  
+					  
+					  <label for="spotfrdlyname" class="form-label">
+                                            Spot Friendly Name
+                                          </label>
+                                          <input type="text" class="reg-input" id="spotfrdlyname" name="spotfrdlyname" placeholder="Spot Friendly Name" />
+					  
+					   <label for="usgtime" class="form-label">
+                                           Usage Time
+                                          </label>
+                                          <input type="text" class="reg-input" id="usgtime" name="usgtime" placeholder="Usage Time" />
+					 
+					 <label for="lt" class="form-label">
+                                            LOT
+                                          </label>
+                                          <input type="text" class="reg-input" id="lt" name="lt" placeholder="LOT" />	  				          			  
+					   				   					  
+                                      </div>
+                                  </div>
+                              </fieldset>
+                             <div id="create">
+                                  <input type="hidden" name="token" value="" id="INPUT_44" />
+                           <a style="text-decoration: none;color: #ffffff" class="btn btn-success savebtn" onclick="updateSpot();">Submit</a>
+                       </div>
+                          </form>
+                            </div>
+                              </div>
+                                </div>
+            <div class="tab-pane fade" id="camngmnt8" style=" border: 1px solid #ddd; border-top: none">
+		<div class="add-node">
+                      <a href="javascript:;" data-task="create" class="btn btn-primary xcrud-action addbtn"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;Delete Spot</a>
+                      <div class="add-form" style="display: none">
+                          <form method="post" action="" id="form-device" style="">
+                               <fieldset id="FIELDSET_01" class="inptform2">
+
+                                  <div id="form-elem-section" style="width: 100%" >
+                                      <div class="col-lg-6">
+				      
+				      <label for="sitd" class="form-label">
+                                              Site Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="sitd" name="sitd" placeholder="Site Id" />
+					   
+					   </div>
+					  <div class="col-lg-6">
+				    <label for="spoId" class="form-label">
+                                              Spot Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="spoId" name="spoId" placeholder="Spot Id" />	  
+				      			         					  
+                                      </div>
+                                  </div>
+                              </fieldset>
+                             <div id="create">
+                                  <input type="hidden" name="token" value="" id="INPUT_44" />
+                           <a style="text-decoration: none;color: #ffffff" class="btn btn-success savebtn" onclick="deleteSpot();">Submit</a>
+                       </div>			      
+			  </form>
+                            </div>
+                              </div>
+                                </div>				
+				  </div>
+				    </div>
+				      </div>
+<script src="js/indexlogin.js"></script>
+   </div>    
+    <div class="footer">
+	<div class="">
+	<p class="">&copy; 2016 U-NaaS. All rights reserved</p>
+	</div>
+   </div>
+  <script src="js/mows.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+   function removeData(){
+	
+	console.log("inside remove data");
+	localStorage.removeItem('realm');	
+	localStorage.removeItem('accessToken');
+	localStorage.removeItem('userId');
+     }
+        var usrid = localStorage.getItem('userId');
+	console.log("userId.... " +usrid);
+	document.getElementById("demo").innerHTML = usrid;
+  </script>
+  </center>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/bootbox.min.js"></script>
+      <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+      <script src="js/dataTable.js"></script>
+      <script src="js/dataTable.bootstrap.js"></script>
+
+      <script src="js/common.js"></script>
+      <script src="js/inventoryConfigDI.js"></script>
+      <script type="text/javascript">
+
+      $(document).ready(function() {
+
+
+          $('#actiontable').dataTable( {
+              "aoColumnDefs": [
+                  { 'bSortable': false, 'aTargets': [ 2 ] }
+              ]
+          });
+
+          $('#variablelist').dataTable( {
+              "aoColumnDefs": [
+                  { 'bSortable': false, 'aTargets': [ 2,3,4,5,7,8 ] }
+              ]
+          });
+
+
+
+
+          $('.addbtn').on('click',function() {
+                $('.add-form').slideToggle();
+
+          });
+
+
+
+          $('.savebtn').on('click',function() {
+              $('.add-form').slideUp();
+
+          });
+
+
+          $('.addplatformbtn').on('click',function() {
+                $('.add-platform').slideToggle();
+
+          });
+
+
+
+          $('.actionsavebtn').on('click',function() {
+              $('.add-action-form').slideUp();
+
+          });
+
+
+          $('.addvariablebtn').on('click',function() {
+                $('.add-variable').slideToggle();
+
+          });
+
+
+
+          $('.savevariablebtn').on('click',function() {
+              $('.add-variable').slideUp();
+
+          });
+
+          $("input:radio[name='vrange']").click(function() {
+             if($(this).val() == 'range') {
+                 $('.range-input').show();
+
+             }
+              else {
+                 $('.range-input').hide();
+
+             }
+
+          });
+
+      });
+
+      $(function(){
+          $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+              // Get the name of active tab
+              var activeTab = $(e.target).text();
+              // Get the name of previous tab
+              var previousTab = $(e.relatedTarget).text();
+              $(".active-tab span").html(activeTab);
+              $(".previous-tab span").html(previousTab);
+          });
+      });
+
+      </script>
+  </body>
+</html>

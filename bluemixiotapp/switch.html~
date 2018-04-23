@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="">
+
+  <title>A DA</title>
+
+  <link href="css/thirdparty/bootstrap.min.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body class="layout-body">
+
+  <!-- Sticky Headder -->
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+          <div class="navbar-header">
+
+                <p class="logo">DEVICE AUTOMATION WITH BLUEMIX IOT PLATFORM</p>
+
+          </div>
+
+      </div>
+  </div>
+
+  <div class="container-fluid wrapper" id='brokerInfo' data-broker-info='{"brokerHost":"172.16.1.180","brokerPort":"61614","username":"PLATFORM", "password":"platform"}'>
+      <div class="col-lg-3 col-md-4">
+     <div class="element">
+      <div class="device col-lg-12 col-md-12 col-sm-6" id="standardGateway-2" name="Light Bulb" data-node-info='{"entityId":"standardGateway","nodeId":"nodeId3","name":"Light Bulb","lastStatus":"","nodeType":"BINARY-SWITCH"}'>
+         <div class="device-container">
+            <img id="standardGateway-nodeId3-bulb-off" src="images/bulb-off.png" alt="device" style="height: 190px"/>
+            <img id="standardGateway-nodeId3-bulb-on" src="images/bulb-on.png" alt="device" style="height: 190px; display:none"/>
+         </div>
+      </div>
+      <div class="controls col-lg-12 col-md-12 col-sm-6">
+         <div class="device-container">
+            <p> Device Name :<span class="deviceId">d1</span></p>
+            <p> Device Type :<span class="deviceName">Light Bulb</span></p>
+            <img id="standardGateway-nodeId3-bulb-switch-off" class="bulb-switch-off" src="images/center_button_normal.png" alt="switch off"  onClick="lightBulb.doAction('standardGateway-nodeId3','ff')" />
+            <img id="standardGateway-nodeId3-bulb-switch-on" class="bulb-switch-on" src="images/center_button_on.png" alt="switch on"  onClick="lightBulb.doAction('standardGateway-nodeId3','00')" />
+         </div>
+      </div>
+   </div>
+</div>
+  </div>
+
+  <div class="footer" style="margin-left:0px">
+    <div class="">
+      <p class="">&copy; 2014 Altiux. All rights reserved</p>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="javascript/thirdparty/jquery.min.js"></script>
+  <script type="text/javascript" src="javascript/thirdparty/bootstrap.min.js"></script>
+  <script type="text/javascript" src="javascript/appinit.js"></script>
+  <script type="text/javascript" src="javascript/lib/ioteemsg.js"></script>
+  <script type="text/javascript" src="javascript/lib/mqttws31.js"></script>
+  <script type="text/javascript" src="javascript/lib/altiux.js"></script>
+  <script type="text/javascript" src="javascript/nodes/light_bulb.js"></script>
+  <script type="text/javascript" src="javascript/nodes/switch.js"></script>
+  <script type="text/javascript" src="javascript/nodes/lamp.js"></script>
+</body>
+</html>

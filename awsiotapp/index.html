@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="">
+
+  <title>A DA</title>
+  
+  <link href="css/thirdparty/bootstrap.min.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/nodes/light_bulb.css" rel="stylesheet">
+
+</head>
+
+<body class="layout-body">     
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+
+        <p class="logo"> UNAAS DEVICE AUTOMATION</p>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container-fluid wrapper" id='brokerInfo' data-broker-info='{"brokerHost":"172.16.1.180","brokerPort":"61614","username":"PLATFORM", "password":"platform"}'>
+      <div class="row">
+        <div class="col-lg-6">
+    <div class="element">
+      <label>testEntity1 - testNode1 - Light Bulb</label>
+      <div id="700-100" name="Light Bulb" class="device" style="overflow:auto; height:230px; width: 270px" data-node-info='{"entityId":"700","nodeId":"100","name":"Light Bulb","lastStatus":"","nodeType":"BINARY-SWITCH"}'>
+        <img id="700-100-bulb-off" src="images/bulb-off.png"  alt="device" class="bulb-off"/>
+        <img id="700-100-bulb-on" src="images/bulb-on.png" alt="device" class="bulb-on"/>
+        <div id="700-100-switch-off" class="bulb-switch-off" onClick="lightBulb.doAction('700-100','00')"></div>
+        <div id="700-100-switch-on" class="bulb-switch-on" onClick="lightBulb.doAction('700-100','ff')"></div>
+      </div>
+    </div>
+   </div>     <div class="col-lg-6">
+    <div class="element">
+      <label>testEntity1 - testNode2 - Light Bulb</label>
+      <div id="700-101" name="Light Bulb" class="device" style="overflow:auto; height:230px; width: 270px" data-node-info='{"entityId":"700","nodeId":"101","name":"Light Bulb","lastStatus":"","nodeType":"BINARY-SWITCH"}'>
+        <img id="700-101-bulb-off" src="images/bulb-off.png"  alt="device" class="bulb-off"/>
+        <img id="700-101-bulb-on" src="images/bulb-on.png" alt="device" class="bulb-on"/>
+        <div id="700-101-switch-off" class="bulb-switch-off" onClick="lightBulb.doAction('700-101','00')"></div>
+        <div id="700-101-switch-on" class="bulb-switch-on" onClick="lightBulb.doAction('700-101','ff')"></div>
+      </div>
+    </div>
+   </div>  
+  </div>  <div class="row">
+        <div class="col-lg-6">
+    <div class="element">
+      <label>testEntity2 - testNode3 - Light Bulb</label>
+      <div id="701-102" name="Light Bulb" class="device" style="overflow:auto; height:230px; width: 270px" data-node-info='{"entityId":"701","nodeId":"102","name":"Light Bulb","lastStatus":"","nodeType":"BINARY-SWITCH"}'>
+        <img id="701-102-bulb-off" src="images/bulb-off.png"  alt="device" class="bulb-off"/>
+        <img id="701-102-bulb-on" src="images/bulb-on.png" alt="device" class="bulb-on"/>
+        <div id="701-102-switch-off" class="bulb-switch-off" onClick="lightBulb.doAction('701-102','00')"></div>
+        <div id="701-102-switch-on" class="bulb-switch-on" onClick="lightBulb.doAction('701-102','ff')"></div>
+      </div>
+    </div>
+   </div>     <div class="col-lg-6">
+    <div class="element">
+      <label>testEntity2 - testNode4 - Light Bulb</label>
+      <div id="701-103" name="Light Bulb" class="device" style="overflow:auto; height:230px; width: 270px" data-node-info='{"entityId":"701","nodeId":"103","name":"Light Bulb","lastStatus":"","nodeType":"BINARY-SWITCH"}'>
+        <img id="701-103-bulb-off" src="images/bulb-off.png"  alt="device" class="bulb-off"/>
+        <img id="701-103-bulb-on" src="images/bulb-on.png" alt="device" class="bulb-on"/>
+        <div id="701-103-switch-off" class="bulb-switch-off" onClick="lightBulb.doAction('701-103','00')"></div>
+        <div id="701-103-switch-on" class="bulb-switch-on" onClick="lightBulb.doAction('701-103','ff')"></div>
+      </div>
+    </div>
+   </div>  
+  </div>
+  </div>
+
+  <div class="footer" style="margin-left:0px">
+    <div class="">
+      <p class="">&copy; 2016 Unaas. All rights reserved</p>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="javascript/thirdparty/jquery.min.js"></script>
+  <script type="text/javascript" src="javascript/thirdparty/bootstrap.min.js"></script>
+  <script type="text/javascript" src="javascript/appinit.js"></script>
+  <script type="text/javascript" src="javascript/lib/ioteemsg.js"></script>
+  <script type="text/javascript" src="javascript/lib/mqttws31.js"></script>
+  <script type="text/javascript" src="javascript/lib/unaas.js"></script>
+  <script type="text/javascript" src="javascript/nodes/light_bulb.js"></script>
+</body>
+</html>

@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+    <title>lot</title>
+	<!-- CSS for jquery table -->
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	 <!-- Bootstrap Fileupload CSS
+	 <link href="css/fileinput.min.css" rel="stylesheet"> -->
+    <!-- Custom styles for this template -->
+    <link href="css/signup.css" rel="stylesheet">
+    <link href="css/inventorylanding.css" rel="stylesheet">
+    <link href="css/landing.css" rel="stylesheet">
+    <link href="css/datatables.css" rel="stylesheet">
+    <link href="css/cgw.css" rel="stylesheet">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <!--<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css"> -->
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]>
+  <!-->
+   </head>
+<style>
+#demo {
+    text-align: right;
+    color: white;
+}
+</style>
+  <body class="landing-body">
+      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+          <div class="container">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+<p class="logo"><a href="http://13.250.24.178:3500/login.html"><button onclick="removeData();"><img align = "left" alt="" src = "/img/logout.png" height = "15" width = "15"></button>
+</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unified UI</p><p id="demo"></p>
+<script>                                 
+</script>                 
+              <div class="navbar-collapse navbar-ex1-collapse collapse" style="height: 1px;">
+              </div>
+               <ul class="nav nav-sidebar navbar-inverse side-nav">
+	       <div class="scroll">
+	       
+              <div class="dropdown">
+		<button onclick="myFunction()" class="dropbtn">STANDARD DEVICE CLOUD GATEWAY</button>
+		<div id="myDropdown" class="dropdown-content">
+		<a href="CloudProvisioning.html">Cloud Provisioning</a>
+		<a href="solutionProvisioning.html">Solution Provisioning</a>
+		<a href="DeviceProvisioningOrInventory.html">Device Provisioning/Inventory</a>
+		<a href="localtestdemo.html">Local Operation (EMQTT)</a>
+		<a href="remoteoperationdemo.html">Remote Operation (DCG)</a>
+                <a href="registrationGateway.html">Registration via API Gateway</a>
+		<a href="registration.html">Direct Standard Gateway Registration</a>
+		<br>		
+		<div class="dropdown2">		
+		<button onclick="myFunction2()" class="dropbtn2">PONTE APPS</button>
+                <div id="myDropdown2" class="dropdown2-content">
+		<a href="PartnerTesting.html">Admin Testing with Ponte</a>
+		<a href="operatorTesting.html">Operator Testing with Ponte</a>
+		<a href="solutionTesting.html">Solution Testing with Ponte</a>
+		<a href="Solution&NodeTesting.html">Solution and Node Testing with Ponte</a>
+		<a href="NodeTesting.html">Nodes Testing with Ponte</a>
+		</div>
+		</div>
+                <div class="dropdown11">
+		<button onclick="location.href=''" class="dropbtn11">TCP/IP ADAPTER APPS</button>
+                <div id="myDropdown11" class="dropdown11-content">
+		</div>
+		</div>		
+		</div> 
+		</div>
+		<br>
+		<br>
+		<div class="dropdown22">
+		<button onclick="myFunction22()" class="dropbtn22">SOL DEVELOPMENT(AUTH CODE)</button>
+                <div id="myDropdown22" class="dropdown22-content">
+		<a href="webAppAccessWithoutSecretKey.html">MOBILE WEB APP ACCESS WITHOUT SECRET KEY</a>
+		<a href="webAppAccessWithSecretKey.html">MOBILE WEB APP ACCESS WITH SECRET KEY</a>
+		<a href="mobilewebappCreationandAccessGrant.html">MOBILE WEB APP CREATION AND TESTING (AUTH GRANT FLOW)</a>
+		<div class="dropdown24">
+		<button onclick="myFunction24()" class="dropbtn24">MOBILE NATIVE APP</button>
+                <div id="myDropdown24" class="dropdown24-content">
+		<a href="">Get Authorization Code</a>	
+		<a href="">Get Access Token</a>	
+		<a href="">Call Other Api's For Mobile App Development</a>	
+		</div>
+		</div>
+		<div class="dropdown19">
+		<button onclick="myFunction19()" class="dropbtn19">MOBILE HYBRID APP</button>
+                <div id="myDropdown19" class="dropdown19-content">
+		<a href="deviceRegister.html">Device Registration</a>
+		<a href="appRegister.html">App Registration</a>
+		<a href="appSolActivation.html">App/Solution Activation</a>
+		<a href="getAuthorizationCode.html">Get Authorization Code</a>	
+		<a href="getAccessToken.html">Get Access Token</a>	
+		<a href="mobilewebsite.html">Create Mobile Website</a>
+		<a href="accessCreatedMobileWebsite.html">Access Created Mobile Website</a>
+		</div>
+		</div>
+		</div>
+		</div>
+		<br>
+		<br>
+		<div class="dropdown26">
+		<button onclick="myFunction26()" class="dropbtn26">SOL DEVELOPMENT(IMPLICIT)</button>
+                <div id="myDropdown26" class="dropdown26-content">
+		<a href="mobilewebappImplicit.html">MOBILE WEB APP CREATION AND TESTING (IMPLICIT)</a>	
+		</div>
+		</div>
+		<br>
+		<br>
+		<div class="dropdown20">
+		<button onclick="myFunction20()" class="dropbtn20">MY RESOURCES</button>
+                <div id="myDropdown20" class="dropdown20-content">
+		<a href="mySolutions.html">My Solutions</a>	
+		<a href="mysites.html">My Sites</a>	
+		<a href="mydevices.html">My Devices</a>	
+		</div>
+		</div>
+		<br>
+		<br>		
+		<div class="dropdown9">
+		<button onclick="myFunction9()" class="dropbtn9">ONE M2M SERVICE</button>
+                <div id="myDropdown9" class="dropdown9-content">
+		<div class="dropdown6">
+		<button onclick="myFunction6()" class="dropbtn6">DCG APPS</button>
+                <div id="myDropdown6" class="dropdown6-content">
+		<a href="partnerTestingDCG.html">Admin Testing with DCG</a>
+                <a href="operatorTestingDCG.html">Operator Testing with DCG</a>
+		<a href="solutionTestingDCG.html">Solution Testing with DCG</a>
+		<a href="solution&nodesTestingDCG.html">Solution and Nodes Testing with DCG</a>
+		<a href="nodesTestingDCG.html">Node Testing with DCG</a>
+		</div>
+		</div>
+		<div class="dropdown10">
+		<button onclick="myFunction10()" class="dropbtn10">OTA</button>
+                <div id="myDropdown10" class="dropdown10-content">
+		<a href="">Firmware pending update</a>
+		<a href="">Software pending update</a>
+               	</div>
+		</div>
+		<div class="dropdown8">
+		<button onclick="myFunction8()" class="dropbtn8">SDP</button>
+                <div id="myDropdown8" class="dropdown8-content">
+		</div>
+		</div>
+		</div>
+		<br>
+		<br>		
+		<div class="dropdown16">
+		<button onclick="myFunction16()" class="dropbtn16">SITE INSTALLER</button>
+                <div id="myDropdown16" class="dropdown16-content">
+		<a href="spot.html">Spot</a>
+		<a href="lot.html">Lot</a>
+                <a href="remoteaccessvalidation.html">Remote Access Validation</a>		
+		</div>
+		</div>
+		<br>
+		<br>
+	        <div class="dropdown3">
+		<button onclick="myFunction3()" class="dropbtn3">APP</button>
+                <div id="myDropdown3" class="dropdown3-content">
+		<a href="app.html">All Categories & Content</a>
+		</div>
+		</div>
+		<br>
+		<br>
+		</div>
+	    </ul>
+        </div>
+    </div>
+</div>
+<script src="js/cgw.js"></script>
+<div class="container-fluid" id="wrapper">
+    <div id="output"></div>
+       <center> 
+          <ul class="nav nav-tabs" id="myTab">
+              <li class="active"><a href="#nodes" data-toggle="tab">Add Lot</a></li>
+              <li><a href="#camngmnt1" data-toggle="tab">Get Lots</a></li>	      
+              <li><a href="#camngmnt2" data-toggle="tab">Map  Lot</a></li>              
+              <li><a href="#camngmnt3" data-toggle="tab">Unmap Lot</a></li>                           
+              <li><a href="#camngmnt4" data-toggle="tab">Update Lot</a></li>              
+              <li><a href="#camngmnt5" data-toggle="tab">Delete Lot</a></li>             
+	</ul>
+          <div class="tab-content">
+              <div class="tab-pane active" id="nodes" style=" border: 1px solid #ddd; border-top: none">
+                  <div class="add-node">
+                      <a href="javascript:;" data-task="create" class="btn btn-primary xcrud-action addbtn"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;Add Lot</a>
+                      <div class="add-form" style="display: none">
+                          <form method="post" action="" id="form-device" style="">
+                              <fieldset id="FIELDSET_01" class="inptform1">
+
+                                  <div id="form-elem-section" style="width: 100%">
+                                      <div class="col-lg-6">
+				      
+				       <label for="lotId" class="form-label">
+                                              Lot Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="lotId" name="lotId" placeholder="Lot Id" />
+				      		
+					<label for="emailId" class="form-label">
+                                              E-Mail Id
+                                          </label>
+					<input type="text" class="reg-input" id="emailId" name="emailId" placeholder="Email Id" />
+                                        			
+					  </div>
+					  <div class="col-lg-6">
+					   <label for="parentId" class="form-label">
+                                            Parent Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="parentId" name="parentId" placeholder="Site Id" /> 					  
+					
+					  <label for="phoneNumber" class="form-label">
+                                            Phone No.
+                                          </label>
+                                          <input type="text" class="reg-input" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" />					  
+				   </div>
+                              </fieldset>			      
+                              <div id="create">
+                                  <input type="hidden" name="token" value="67bccf10dd6b7e2350d79c3f8e52e3b7" id="INPUT_44" />
+                           <a style="text-decoration: none;color: #ffffff" class="btn btn-success savebtn" onclick="addLot();">Submit</a>
+                       </div>
+                          </form>
+                            </div>
+                              </div>                  
+				</div>
+		<div class="tab-pane fade" id="camngmnt1" style=" border: 1px solid #ddd; border-top: none">
+                  <div class="add-node">
+                      <a href="javascript:;" data-task="create" class="btn btn-primary xcrud-action addbtn"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;Get Lots</a>
+                      <div class="add-form" style="display: none">
+                          <form method="post" action="" id="form-device" style="">
+                              <fieldset id="FIELDSET_01" class="inptform2">
+
+                                  <div id="form-elem-section" style="width: 100%">
+                                      <div class="col-lg-6">
+				      
+				      <label for="siteId" class="form-label">
+                                              Site Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="siteId" name="siteId" placeholder="Site Id" />
+					  </div>
+                              </fieldset>			      
+                              <div id="create">
+                                  <input type="hidden" name="token" value="67bccf10dd6b7e2350d79c3f8e52e3b7" id="INPUT_44" />
+                           <a style="text-decoration: none;color: #ffffff" class="btn btn-success savebtn" onclick="getLots();">Submit</a>
+                       </div>
+                          </form>
+                            </div>
+                              </div>
+                  <div class="row">
+                      <div class="col-lg-14">
+                          <div class="panel panel-default">
+
+                              <!-- /.panel-heading -->
+                              <div class="panel-body">
+                                  <div class="table-responsive">
+                                      <div id="dataTables-example_wrapper" class="dataTables_wrapper form-inline" role="grid">
+
+            <table id="nodelist" class="display table table-striped table-bordered table-hover dataTable no-footer" cellspacing="0" width="100%">
+                                              <thead>
+                                              <tr>
+					          <th style="width:550px">Lot Inactive Id</th>
+						  <th style="width:550px">Lot Activation Id</th>
+					          <th style="width:550px">Product Type</th>
+						  <th style="width:550px">Access Type</th>
+						  <th></th>
+						  <th></th>
+                                              </tr>
+                                              </thead>                                            
+                                          </table>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+	<div class="tab-pane fade" id="camngmnt2" style=" border: 1px solid #ddd; border-top: none">
+		<div class="add-node">
+                      <a href="javascript:;" data-task="create" class="btn btn-primary xcrud-action addbtn"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;Map Lot</a>
+                      <div class="add-form" style="display: none">
+                          <form method="post" action="" id="form-device" style="">
+                               <fieldset id="FIELDSET_01" class="inptform1">
+
+                                  <div id="form-elem-section" style="width: 100%" >
+                                      <div class="col-lg-6">
+				      
+				      <label for="ltId" class="form-label">
+                                              Lot Inactive Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="ltId" name="ltId" placeholder="Lot Inactive Id" />
+				       
+				       <label for="sptId" class="form-label">
+                                            Spot Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="sptId" name="sptId" placeholder="Spot Id" />	
+				       				      
+				        </div>
+					  <div class="col-lg-6">
+
+                                          <label for="lotactivatnId" class="form-label">
+                                              Lot Activation Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="lotactivatnId" name="lotactivatnId" placeholder="Lot Activation Id" />					  
+					   <label for="devId" class="form-label">
+                                            Device Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="devId" name="devId" placeholder="Device Id" />	
+
+                                      </div>
+                                  </div>
+                              </fieldset>
+                             <div id="create">
+                                  <input type="hidden" name="token" value="" id="INPUT_44" />
+                           <a style="text-decoration: none;color: #ffffff" class="btn btn-success savebtn" onclick="mapLot();">Submit</a>
+                       </div>			      
+			  </form>
+                            </div>
+                              </div>
+                                </div>
+	<div class="tab-pane fade" id="camngmnt3" style=" border: 1px solid #ddd; border-top: none">
+		<div class="add-node">
+                      <a href="javascript:;" data-task="create" class="btn btn-primary xcrud-action addbtn"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;Unmap Lot</a>
+                      <div class="add-form" style="display: none">
+                          <form method="post" action="" id="form-device" style="">
+                              <fieldset id="FIELDSET_01" class="inptform1">
+
+                                  <div id="form-elem-section" style="width: 100%" >
+                                      <div class="col-lg-6">
+				      
+				       <label for="loId" class="form-label">
+                                              Lot Inactive Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="loId" name="loId" placeholder="Lot Inactive Id" />
+				       
+				       <label for="spId" class="form-label">
+                                            Spot Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="spId" name="spId" placeholder="Spot Id" />	
+				       				      
+				        </div>
+					  <div class="col-lg-6">
+
+                                          <label for="lotactvtnId" class="form-label">
+                                              Lot Activation Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="lotactvtnId" name="lotactvtnId" placeholder="Lot Activation Id" />	
+                                        <label for="dvId" class="form-label">
+                                            Device Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="dvId" name="dvId" placeholder="Device Id" />
+				      
+				      </div>
+                                  </div>
+                              </fieldset>
+                             <div id="create">
+                                  <input type="hidden" name="token" value="" id="INPUT_44" />
+                           <a style="text-decoration: none;color: #ffffff" class="btn btn-success savebtn" onclick="unmapLot();">Submit</a>
+                       </div>			      
+			  </form>
+                            </div>
+                              </div>
+                                </div>
+		<div class="tab-pane fade" id="camngmnt4" style=" border: 1px solid #ddd; border-top: none">
+		<div class="add-node">
+                      <a href="javascript:;" data-task="create" class="btn btn-primary xcrud-action addbtn"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;Update Lot</a>
+                      <div class="add-form" style="display: none">
+                          <form method="post" action="" id="form-device" style="">
+                              <fieldset id="FIELDSET_01" class="inptform4">
+
+                                  <div id="form-elem-section" style="width: 100%" >
+                                      <div class="col-lg-6">
+				      
+				      <label for="lId" class="form-label">
+                                              Lot Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="lId" name="lId" placeholder="Lot Id" />		      
+				     
+				      <label for="ltde" class="form-label">
+                                            Latitude
+                                          </label>
+                                          <input type="text" class="reg-input" id="ltde" name="ltde" placeholder="Latitude" />					  
+					  
+					   <label for="alt" class="form-label">
+                                            Altitude
+                                          </label>
+                                          <input type="text" class="reg-input" id="alt" name="alt" placeholder="Altitude" />
+				     
+				       <label for="ipAdd" class="form-label">
+                                              Ip Address
+                                          </label>
+                                          <input type="text" class="reg-input" id="ipAdd" name="ipAdd" placeholder="Ip Address" />
+				      
+					<label for="divisn" class="form-label">
+                                              Division
+                                          </label>
+                                          <input type="text" class="reg-input" id="divisn" name="divisn" placeholder="Division" />
+                            
+			                  <label for="subdivisn" class="form-label">
+                                            Sub Division
+                                          </label>
+                                          <input type="text" class="reg-input" id="subdivisn" name="subdivisn" placeholder="Sub Division" />
+					  
+					   <label for="websturl" class="form-label">
+                                            Website Url
+                                          </label>
+                                          <input type="text" class="reg-input" id="websturl" name="websturl" placeholder="Website Url" />
+					  
+					   <label for="mnger" class="form-label">
+                                            Manager
+                                          </label>
+                                          <input type="text" class="reg-input" id="mnger" name="mnger" placeholder="Manager" />
+                                         
+					  <label for="industrytype" class="form-label">
+                                             Industry Type
+                                          </label>
+                                          <select class="form-control" id="industrytype">
+                                              <option>Transportation & Logistics</option>
+                                              <option>Security & Home Automation</option>
+                                              <option>Retail & Payment Solutions</option>
+                                              <option>Industrial Equipment</option>                                                                                  
+                                              <option>Connected Car</option>                                                                                 
+                                              <option>Hospitality </option>                                                                                 
+                                              <option>Health Care</option>                                                                                 
+                                          </select>
+					  
+                                          <label for="metring" class="form-label">
+                                             Metering
+                                          </label>
+                                          <input type="text" class="reg-input" id="metring" name="metring" placeholder="Metering" />
+					  
+					  <label for="currcy" class="form-label">
+                                            Currency 
+                                          </label>
+                                          <input type="text" class="reg-input" id="currcy" name="currcy" placeholder="Currency" />
+					 
+					   <label for="numbroffloors" class="form-label">
+                                            No. Of Floors
+                                          </label>
+                                          <input type="text" class="reg-input" id="numbroffloors" name="numbroffloors" placeholder="Number Of Floors" />
+					  
+					   <label for="violatns" class="form-label">
+                                           Violations
+                                          </label>
+                                            <select class="form-control" id="violatns">
+                                              <option>Coming Soon</option>                                                                                                                          
+                                          </select>
+					 
+					 <label for="gnder" class="form-label">
+                                             Gender
+                                          </label>
+                                          <select class="form-control" id="gnder">
+                                              <option>Female</option>
+                                              <option>Male</option>                                                                                                                                                                         
+                                          </select>
+					 
+					 <label for="rulesconfigtion" class="form-label">
+                                            Rules Configuration
+                                          </label>
+                                          <input type="text" class="reg-input" id="rulesconfigtion" name="rulesconfigtion" placeholder="Rules Configuration" />
+					  
+                                         <label for="regn" class="form-label">
+                                            Region
+                                          </label>
+                                          <input type="text" class="reg-input" id="regn" name="regn" placeholder="Region" />
+					  
+					   <label for="stdcde" class="form-label">
+                                            STD Code
+                                          </label>
+                                          <input type="text" class="reg-input" id="stdcde" name="stdcde" placeholder="STD Code" />
+
+                                          <label for="countrynm" class="form-label">
+                                            Country Name
+                                          </label>
+                                          <input type="text" class="reg-input" id="countrynm" name="countrynm" placeholder="Country Name" />                    
+				         
+					</div>
+					  <div class="col-lg-6">
+
+					  <label for="activatnCode" class="form-label">
+                                              Activation Code
+                                          </label>
+                                          <input type="text" class="reg-input" id="activatnCode" name="activatnCode" placeholder="Activation Code" />
+					  
+                                        <label for="displayname" class="form-label">
+                                              Display Name
+                                          </label>
+                                          <input type="text" class="reg-input" id="displayname" name="displayname" placeholder="Display Name" />					  
+					 
+					  <label for="lngtude" class="form-label">
+                                           Longitude
+                                          </label>
+                                          <input type="text" class="reg-input" id="lngtude" name="lngtude" placeholder="Longitude" />
+					 
+					 <label for="appNm" class="form-label">
+                                            App Name
+                                          </label>
+                                          <input type="text" class="reg-input" id="appNm" name="appNm" placeholder="App Name" />
+					  
+					  <label for="appId" class="form-label">
+                                            App Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="appId" name="appId" placeholder="App Id" />					  
+					 
+					   <label for="portAddress" class="form-label">
+                                            Port  Address
+                                          </label>
+                                          <input type="text" class="reg-input" id="portAddress" name="portAddress" placeholder="Port Address" />
+								      
+				          <label for="postalcode" class="form-label">
+                                            Postal Code
+                                          </label>
+                                          <input type="text" class="reg-input" id="postalcode" name="postalcode" placeholder="Postal Code" />
+					  </div>
+					  <div class="col-lg-6">
+					   <label for="urlAddr" class="form-label">
+                                            URL
+                                          </label>
+                                          <input type="text" class="reg-input" id="urlAddr" name="urlAddr" placeholder="URL" />
+					  
+					   <label for="tpc" class="form-label">
+                                            Topic 
+                                          </label>
+                                          <input type="text" class="reg-input" id="tpc" name="tpc" placeholder="Topic" />
+					  
+					   <label for="ky" class="form-label">
+                                            Key
+                                          </label>
+                                          <input type="text" class="reg-input" id="ky" name="ky" placeholder="Key" />				  
+					  
+					  
+					   <label for="timezone" class="form-label">
+                                            Time Zone
+                                          </label>
+                                          <input type="text" class="reg-input" id="timezone" name="timezone" placeholder="Time Zone" />
+					  
+					   <label for="citycode" class="form-label">
+                                           City Code
+                                          </label>
+                                          <input type="text" class="reg-input" id="citycode" name="citycode" placeholder="City Code" />
+					  
+					   <label for="cityname" class="form-label">
+                                            City Name
+                                          </label>
+                                          <input type="text" class="reg-input" id="cityname" name="cityname" placeholder="City Name" />
+
+                                         <label for="countrycode" class="form-label">
+                                            Country Code
+                                          </label>
+                                          <input type="text" class="reg-input" id="countrycode" name="countrycode" placeholder="Country Code" />                                        
+				      
+				          <label for="mobilenumber" class="form-label">
+                                            Mobile No.
+                                          </label>
+                                          <input type="text" class="reg-input" id="mobilenumber" name="mobilenumber" placeholder="Mobile Number" />
+				      
+				          <label for="localty" class="form-label">
+                                            Locality
+                                          </label>
+                                          <input type="text" class="reg-input" id="localty" name="localty" placeholder="Locality" />
+				      
+				          <label for="ara" class="form-label">
+                                            Area
+                                          </label>
+                                          <input type="text" class="reg-input" id="ara" name="ara" placeholder="Area" />
+
+                                           <label for="streetname" class="form-label">
+                                            Street Name
+                                          </label>
+                                          <input type="text" class="reg-input" id="streetname" name="streetname" placeholder="Street Name" />
+                                        
+					<label for="streetnumber" class="form-label">
+                                            Street No.
+                                          </label>
+                                          <input type="text" class="reg-input" id="streetnumber" name="streetnumber" placeholder="Street Number" />					  
+				         
+				      </div>
+                                  </div>
+                              </fieldset>
+                             <div id="create">
+                                  <input type="hidden" name="token" value="" id="INPUT_44" />
+                           <a style="text-decoration: none;color: #ffffff" class="btn btn-success savebtn" onclick="updateLot();">Submit</a>
+                       </div>
+                          </form>
+                            </div>
+                              </div>
+                                </div>
+		<div class="tab-pane fade" id="camngmnt5" style=" border: 1px solid #ddd; border-top: none">
+		<div class="add-node">
+                      <a href="javascript:;" data-task="create" class="btn btn-primary xcrud-action addbtn"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;Delete Lot</a>
+                      <div class="add-form" style="display: none">
+                          <form method="post" action="" id="form-device" style="">
+                              <fieldset id="FIELDSET_01" class="inptform2">
+
+                                  <div id="form-elem-section" style="width: 100%">
+                                      <div class="col-lg-6">
+				      
+				      <label for="lot" class="form-label">
+                                              Lot Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="lot" name="lot" placeholder="Lot Id" />
+					  </div>
+                              </fieldset>			      
+                              <div id="create">
+                                  <input type="hidden" name="token" value="67bccf10dd6b7e2350d79c3f8e52e3b7" id="INPUT_44" />
+                           <a style="text-decoration: none;color: #ffffff" class="btn btn-success savebtn" onclick="deleteLot();">Submit</a>
+                       </div>
+                          </form>
+                            </div>
+                              </div>
+                                </div>		
+				  </div>
+				    </div>
+				      </div>
+<script src="js/indexlogin.js"></script>
+   </div>    
+    <div class="footer">
+	<div class="">
+	<p class="">&copy; 2016 U-NaaS. All rights reserved</p>
+	</div>
+   </div>
+  <script src="js/mows.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+   function removeData(){
+	
+	console.log("inside remove data");
+	localStorage.removeItem('realm');	
+	localStorage.removeItem('accessToken');
+	localStorage.removeItem('userId');
+     }
+        var usrid = localStorage.getItem('userId');
+	console.log("userId.... " +usrid);
+	document.getElementById("demo").innerHTML = usrid;
+  </script>
+  </center>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/bootbox.min.js"></script>
+      <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+      <script src="js/dataTable.js"></script>
+      <script src="js/dataTable.bootstrap.js"></script>
+
+      <script src="js/common.js"></script>
+      <script src="js/inventoryConfigDI.js"></script>
+      <script type="text/javascript">
+
+      $(document).ready(function() {
+
+
+          $('#actiontable').dataTable( {
+              "aoColumnDefs": [
+                  { 'bSortable': false, 'aTargets': [ 2 ] }
+              ]
+          });
+
+          $('#variablelist').dataTable( {
+              "aoColumnDefs": [
+                  { 'bSortable': false, 'aTargets': [ 2,3,4,5,7,8 ] }
+              ]
+          });
+
+
+
+
+          $('.addbtn').on('click',function() {
+                $('.add-form').slideToggle();
+
+          });
+
+
+
+          $('.savebtn').on('click',function() {
+              $('.add-form').slideUp();
+
+          });
+
+
+          $('.addplatformbtn').on('click',function() {
+                $('.add-platform').slideToggle();
+
+          });
+
+
+
+          $('.actionsavebtn').on('click',function() {
+              $('.add-action-form').slideUp();
+
+          });
+
+
+          $('.addvariablebtn').on('click',function() {
+                $('.add-variable').slideToggle();
+
+          });
+
+
+
+          $('.savevariablebtn').on('click',function() {
+              $('.add-variable').slideUp();
+
+          });
+
+          $("input:radio[name='vrange']").click(function() {
+             if($(this).val() == 'range') {
+                 $('.range-input').show();
+
+             }
+              else {
+                 $('.range-input').hide();
+
+             }
+
+          });
+
+      });
+
+      $(function(){
+          $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+              // Get the name of active tab
+              var activeTab = $(e.target).text();
+              // Get the name of previous tab
+              var previousTab = $(e.relatedTarget).text();
+              $(".active-tab span").html(activeTab);
+              $(".previous-tab span").html(previousTab);
+          });
+      });
+      </script>
+  </body>
+</html>

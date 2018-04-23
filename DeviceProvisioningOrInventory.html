@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+    <title>Device Provisioning Or Inventory</title>
+	<!-- CSS for jquery table -->
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	 <!-- Bootstrap Fileupload CSS
+	 <link href="css/fileinput.min.css" rel="stylesheet"> -->
+    <!-- Custom styles for this template -->
+    <link href="css/signup.css" rel="stylesheet">
+    <link href="css/inventorylanding.css" rel="stylesheet">
+    <link href="css/landing.css" rel="stylesheet">
+    <link href="css/datatables.css" rel="stylesheet">
+    <link href="css/cgw.css" rel="stylesheet">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <!--<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css"> -->
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]>
+  <!-->  
+  </head>
+<style>
+#demo {
+    text-align: right;
+    color: white;
+}
+</style>
+  <body class="landing-body">
+      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+          <div class="container">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+<p class="logo"><a href="http://13.250.24.178:3500/login.html"><button onclick="removeData();"><img align = "left" alt="" src = "/img/logout.png" height = "15" width = "15"></button>
+</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unified UI</p><p id="demo"></p>
+<script>
+                                 
+</script>                 
+              <div class="navbar-collapse navbar-ex1-collapse collapse" style="height: 1px;">
+              </div>
+               <ul class="nav nav-sidebar navbar-inverse side-nav">
+	       <div class="scroll">
+	       
+              <div class="dropdown">
+		<button onclick="myFunction()" class="dropbtn">STANDARD DEVICE CLOUD GATEWAY</button>
+		<div id="myDropdown" class="dropdown-content">
+		<a href="CloudProvisioning.html">Cloud Provisioning</a>
+		<a href="solutionProvisioning.html">Solution Provisioning</a>
+		<a href="DeviceProvisioningOrInventory.html">Device Provisioning/Inventory</a>
+		<a href="localtestdemo.html">Local Operation (EMQTT)</a>
+		<a href="remoteoperationdemo.html">Remote Operation (DCG)</a>
+                <a href="registrationGateway.html">Registration via API Gateway</a>
+		<a href="registration.html">Direct Standard Gateway Registration</a>
+		<br>		
+		<div class="dropdown2">		
+		<button onclick="myFunction2()" class="dropbtn2">PONTE APPS</button>
+                <div id="myDropdown2" class="dropdown2-content">
+		<a href="PartnerTesting.html">Admin Testing with Ponte</a>
+		<a href="operatorTesting.html">Operator Testing with Ponte</a>
+		<a href="solutionTesting.html">Solution Testing with Ponte</a>
+		<a href="Solution&NodeTesting.html">Solution and Node Testing with Ponte</a>
+		<a href="NodeTesting.html">Nodes Testing with Ponte</a>
+		</div>
+		</div>
+                <div class="dropdown11">
+		<button onclick="location.href=''" class="dropbtn11">TCP/IP ADAPTER APPS</button>
+                <div id="myDropdown11" class="dropdown11-content">
+		</div>
+		</div>		
+		</div> 
+		</div>
+		<br>
+		<br>
+		<div class="dropdown22">
+		<button onclick="myFunction22()" class="dropbtn22">SOL DEVELOPMENT(AUTH CODE)</button>
+                <div id="myDropdown22" class="dropdown22-content">
+		<a href="webAppAccessWithoutSecretKey.html">MOBILE WEB APP ACCESS WITHOUT SECRET KEY</a>
+		<a href="webAppAccessWithSecretKey.html">MOBILE WEB APP ACCESS WITH SECRET KEY</a>
+		<a href="mobilewebappCreationandAccessGrant.html">MOBILE WEB APP CREATION AND TESTING (AUTH GRANT FLOW)</a>
+		<div class="dropdown24">
+		<button onclick="myFunction24()" class="dropbtn24">MOBILE NATIVE APP</button>
+                <div id="myDropdown24" class="dropdown24-content">
+		<a href="">Get Authorization Code</a>	
+		<a href="">Get Access Token</a>	
+		<a href="">Call Other Api's For Mobile App Development</a>	
+		</div>
+		</div>
+		<div class="dropdown19">
+		<button onclick="myFunction19()" class="dropbtn19">MOBILE HYBRID APP</button>
+                <div id="myDropdown19" class="dropdown19-content">
+		<a href="deviceRegister.html">Device Registration</a>
+		<a href="appRegister.html">App Registration</a>
+		<a href="appSolActivation.html">App/Solution Activation</a>
+		<a href="getAuthorizationCode.html">Get Authorization Code</a>	
+		<a href="getAccessToken.html">Get Access Token</a>	
+		<a href="mobilewebsite.html">Create Mobile Website</a>
+		<a href="accessCreatedMobileWebsite.html">Access Created Mobile Website</a>
+		</div>
+		</div>
+		</div>
+		</div>
+		<br>
+		<br>
+		<div class="dropdown26">
+		<button onclick="myFunction26()" class="dropbtn26">SOL DEVELOPMENT(IMPLICIT)</button>
+                <div id="myDropdown26" class="dropdown26-content">
+		<a href="mobilewebappImplicit.html">MOBILE WEB APP CREATION AND TESTING (IMPLICIT)</a>	
+		</div>
+		</div>
+		<br>
+		<br>
+		<div class="dropdown20">
+		<button onclick="myFunction20()" class="dropbtn20">MY RESOURCES</button>
+                <div id="myDropdown20" class="dropdown20-content">
+		<a href="mySolutions.html">My Solutions</a>	
+		<a href="mysites.html">My Sites</a>	
+		<a href="mydevices.html">My Devices</a>	
+		</div>
+		</div>
+		<br>
+		<br>		
+		<div class="dropdown9">
+		<button onclick="myFunction9()" class="dropbtn9">ONE M2M SERVICE</button>
+                <div id="myDropdown9" class="dropdown9-content">
+		<div class="dropdown6">
+		<button onclick="myFunction6()" class="dropbtn6">DCG APPS</button>
+                <div id="myDropdown6" class="dropdown6-content">
+		<a href="partnerTestingDCG.html">Admin Testing with DCG</a>
+                <a href="operatorTestingDCG.html">Operator Testing with DCG</a>
+		<a href="solutionTestingDCG.html">Solution Testing with DCG</a>
+		<a href="solution&nodesTestingDCG.html">Solution and Nodes Testing with DCG</a>
+		<a href="nodesTestingDCG.html">Node Testing with DCG</a>
+		</div>
+		</div>
+		<div class="dropdown10">
+		<button onclick="myFunction10()" class="dropbtn10">OTA</button>
+                <div id="myDropdown10" class="dropdown10-content">
+		<a href="">Firmware pending update</a>
+		<a href="">Software pending update</a>
+               	</div>
+		</div>
+		<div class="dropdown8">
+		<button onclick="myFunction8()" class="dropbtn8">SDP</button>
+                <div id="myDropdown8" class="dropdown8-content">
+		</div>
+		</div>
+		</div>
+		<br>
+		<br>			
+		<div class="dropdown16">
+		<button onclick="myFunction16()" class="dropbtn16">SITE INSTALLER</button>
+                <div id="myDropdown16" class="dropdown16-content">
+		<a href="spot.html">Spot</a>
+		<a href="lot.html">Lot</a> 
+                <a href="remoteaccessvalidation.html">Remote Access Validation</a>		
+		</div>
+		</div>
+		<br>
+		<br>
+	        <div class="dropdown3">
+		<button onclick="myFunction3()" class="dropbtn3">APP</button>
+                <div id="myDropdown3" class="dropdown3-content">
+		<a href="app.html">All Categories & Content</a>
+	        </div>
+		</div>
+		<br>
+		<br>
+		</div>
+	    </ul>
+        </div>
+    </div>
+</div>
+<script src="js/cgw.js"></script>
+<div class="container-fluid" id="wrapper">
+    <div id="output"></div>
+       <center> 
+          <ul class="nav nav-tabs" id="myTab">
+              <li class="active"><a href="#nodes" data-toggle="tab">Partner Inventory Device</a></li>
+              <li><a href="#camngmnt" data-toggle="tab">Partner Device Info</a></li>              
+          </ul>
+          <div class="tab-content">
+              <div class="tab-pane active" id="nodes" style=" border: 1px solid #ddd; border-top: none">
+                  <div class="add-node">
+                      <a href="javascript:;" data-task="create" class="btn btn-primary xcrud-action addbtn"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;Add Partner Inventory Device</a>
+                      <div class="add-form" style="display: none">
+                          <form method="post" action="" id="form-device" style="">
+                              <fieldset id="FIELDSET_01" class="inptform0">
+
+                                  <div id="form-elem-section" style="width: 100%">
+                                      <div class="col-lg-6">
+				      
+				       <label for="partnerId" class="form-label">
+                                              Partner Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="partnerId" name="partnerId" placeholder="Partner Id" />
+				      
+				      <label for="deviceId" class="form-label">
+                                              Device Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="deviceId" name="ipaddr" placeholder="Device Id" />
+				      
+				         <label for="devicetype" class="form-label">
+                                              Device Type
+                                          </label>
+					  <select class="form-control" id="devicetype">
+                                              <option>select device type</option>					  
+					      <option>urn:schemas-u-naas-com:device:GENERIC-SD:1</option>                                                                                   
+                                              <option>urn:schemas-u-naas-com:device:GENERIC-RELAY:1</option>                                                                                   
+                                              <option>urn:schemas-u-naas-com:device:GENERIC-DIMMER:1</option>                                                                                   
+                                              <option>urn:schemas-u-naas-com:device:GENERIC-MIXED:1</option>                                             
+                                          </select>
+                                          
+					  <label for="devicetype" class="form-label">
+                                              Cloud Connector
+                                          </label>
+		                          <select class="form-control" id="cc">
+					      <option>select cloud connector</option>
+					      <option>awsiot</option>
+                                              <option>iotee</option>
+                                              <option>emqtt</option>
+                                              <option>tata</option>                                                                                   
+                                              <option>ibmiot</option>                                                                                   
+                                          </select>
+					  
+					  <label for="sensors" class="form-label">
+                                              Sensor
+                                          </label>
+					  <select class="form-control" id="sensors">
+                                              <option>select sensor</option>
+				              <option>temperature</option>                                                                                   
+                                              <option>pressure</option>                                                                                   
+                                              <option>humidity</option>                                                                                   
+                                              <option>co2</option>                                                                                                                              
+                                              <option>soil-moisture</option>                                                                                                                             
+                                              <option>vibration</option>                                                                                                                            
+                                              <option>vos</option>                                                                                                                            
+                                              <option>accelerometer</option>                                                                                                                            
+                                              <option>parking-space</option>                                                                                                                            
+                                              <option>water-purity</option>                                                                                                                            
+                                              <option>energy-meter</option>                                                                                                                            
+                                              <option>solar-panel</option>                                                                                                                           
+                                              <option>water-meter</option>                                                                                                                           
+                                              <option>airquality</option>                                                                                                                           
+                                              <option>wastebin</option>                                                                                                                           
+                                              <option>pricetag</option>                                                                                                                          
+                                              <option>load-cell</option>                                                                                                                        
+                                              <option>chillers</option>                                                                                                                        
+                                              <option>camera</option>                                                                                                                        
+                                              <option>oc</option>                                                                                                                        
+                                              <option>noise</option>                                                                                                                       
+                                              <option>hvac</option>                                                                                                                       
+                                              <option>luminous</option>                                                                                                                       
+                                          </select>
+					  
+                                          <label for="friendlyname" class="form-label">
+                                              Friendly Name
+                                          </label>
+                                          <input type="text" class="reg-input" id="friendlyname" name="friendlyname" placeholder="Friendly Name" />
+                            
+			                  <label for="serialnumber" class="form-label">
+                                            Serial Number
+                                          </label>
+                                          <input type="text" class="reg-input" id="serialnumber" name="serialnumber" placeholder="Serial Number" />
+					  
+					   <label for="udn" class="form-label">
+                                            UDN
+                                          </label>
+                                          <input type="text" class="reg-input" id="udn" name="udn" placeholder="UDN" />
+					  
+					   <label for="upc" class="form-label">
+                                            UPC
+                                          </label>
+                                          <input type="text" class="reg-input" id="upc" name="upc" placeholder="UPC" />
+                                         
+					  <label for="protocol" class="form-label">
+                                             DM Protocol
+                                          </label>
+                                          <select class="form-control" id="protocol">
+					      <option>select protocol</option>
+					      <option>LWM2M</option>
+                                              <option>OMADM</option>
+                                              <option>TR069</option>
+                                              <option>MQTT</option>                                                                                   
+                                          </select>
+					  
+                                          <label for="manufacturer" class="form-label">
+                                             Manufacturer
+                                          </label>
+                                          <input type="text" class="reg-input" id="manufacturer" name="manufacturer" placeholder="Manufacturer" />
+					  
+					  <label for="layoutname" class="form-label">
+                                            Layout Name
+                                          </label>
+                                          <input type="text" class="reg-input" id="layoutname" name="layoutname" placeholder="Layout Name" />
+					 
+					   <label for="zone" class="form-label">
+                                            Zone
+                                          </label>
+                                          <input type="text" class="reg-input" id="zone" name="zone" placeholder="Zone" />
+					  
+					   <label for="manufacturerURL" class="form-label">
+                                           Manufacturer URL
+                                          </label>
+                                          <input type="text" class="reg-input" id="manufacturerURL" name="manufacturerURL" placeholder="Manufacturer URL" />
+					 
+					 <label for="modelid" class="form-label">
+                                            Model Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="modelid" name="modelid" placeholder="Model Id" />			  
+                                         				  
+					</div>
+					  <div class="col-lg-6">  
+				          <label for="type" class="form-label">
+                                              Category
+                                          </label>
+                                          <select class="form-control" id="type">
+					      <option>select category</option>
+                                              <option>SMARTDEVICE</option>
+                                              <option>LEGACYDEVICE</option>
+                                              <option>LTNDEVICE</option>
+                                              <option>GATEWAYDEVICE</option>                                                                                   
+                                          </select>				  
+					  
+					  <label for="relays" class="form-label">
+                                              Relay
+                                          </label>
+		                          <select class="form-control" id="relays">					      
+					      <option>select relay</option>
+					      <option>panic-button</option>
+                                              <option>door-bell</option>
+                                              <option>lock</option>
+                                              <option>binary-switch</option>                                                                                   
+                                              <option>invertor</option>                                                                                   
+                                              <option>dc-motor</option>                                                                                   
+                                              <option>drapes</option>                                                                                  
+                                              <option>drone</option>                                                                                  
+                                              <option>light</option>                                                                                  
+                                              <option>fan</option>                                                                                  
+                                          </select>
+					  
+					  <label for="dimmers" class="form-label">
+                                              Dimmer
+                                          </label>
+		                          <select class="form-control" id="dimmers">
+					      <option>select dimmer</option>
+					      <option>light</option>
+                                              <option>fan</option>
+                                              <option>drapes</option>                                                
+                                          </select>
+					  
+					 <label for="networkdeviceaddress" class="form-label">
+                                            Network Device Address
+                                          </label>
+                                          <input type="text" class="reg-input" id="networkdeviceaddress" name="networkdeviceaddress" placeholder="Network Device Address" />
+					  
+					   <label for="switchid" class="form-label">
+                                            Switch Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="switchid" name="switchid" placeholder="Switch Id" />
+					  
+					  </div>
+					  <div class="col-lg-6">
+					   <label for="ipaddress" class="form-label">
+                                            Ip Address
+                                          </label>
+                                          <input type="text" class="reg-input" id="ipaddress" name="ipaddress" placeholder="Ip Address" />
+					  
+					   <label for="applicationsessionkey" class="form-label">
+                                            Application Session Key
+                                          </label>
+                                          <input type="text" class="reg-input" id="applicationsessionkey" name="applicationsessionkey" placeholder="Application Session Key" />
+					  
+					   <label for="networksessionkey" class="form-label">
+                                            Network Session Key
+                                          </label>
+                                          <input type="text" class="reg-input" id="networksessionkey" name="networksessionkey" placeholder="Network Session Key" />
+					  					  
+					   <label for="certificate" class="form-label">
+                                            Certificate
+                                          </label>
+                                          <input type="text" class="reg-input" id="certificate" name="certificate" placeholder="certificate" />
+					  
+					   <label for="appeui" class="form-label">
+                                           App EUI
+                                          </label>
+                                          <input type="text" class="reg-input" id="appeui" name="appeui" placeholder="App EUI" />
+					  
+					  <label for="modelurl" class="form-label">
+                                            Model URL
+                                          </label>
+                                          <input type="text" class="reg-input" id="modelurl" name="modelurl" placeholder="Model URL" />	
+					  
+					   <label for="applicationkeys" class="form-label">
+                                            Application Keys
+                                          </label>
+                                          <input type="text" class="reg-input" id="applicationkeys" name="applicationkeys" placeholder="Application Keys" />
+					  
+					   <label for="dnounce" class="form-label">
+                                            Dnounce
+                                          </label>
+                                          <input type="text" class="reg-input" id="dnounce" name="dnounce" placeholder="Dnounce" />
+					  
+					   <label for="appnounce" class="form-label">
+                                           App nounce
+                                          </label>
+                                          <input type="text" class="reg-input" id="appnounce" name="appnounce" placeholder="App nounce" />
+					  
+					   <label for="modeltype" class="form-label">
+                                            Model Type
+                                          </label>
+                                          <input type="text" class="reg-input" id="modeltype" name="modeltype" placeholder="Model Type" />
+
+                                         <label for="modelname" class="form-label">
+                                            Model Name
+                                          </label>
+                                          <input type="text" class="reg-input" id="modelname" name="modelname" placeholder="Model Type" />
+				      
+                                      </div>
+                                  </div>
+                              </fieldset>			      
+                              <div id="create">
+                                  <input type="hidden" name="token" value="67bccf10dd6b7e2350d79c3f8e52e3b7" id="INPUT_44" />
+                           <a style="text-decoration: none;color: #ffffff" class="btn btn-success savebtn" onclick="addInventoryDevice();">Submit</a>
+                       </div>
+                          </form>
+                            </div>
+                              </div>
+                  <div class="row">
+                      <div class="col-lg-14">
+                          <div class="panel panel-default">
+
+                              <!-- /.panel-heading -->
+                              <div class="panel-body">
+                                  <div class="table-responsive">
+                                      <div id="dataTables-example_wrapper" class="dataTables_wrapper form-inline" role="grid">
+
+           <table id="nodelist" class="display table table-striped table-bordered table-hover dataTable no-footer" cellspacing="0" width="100%">
+                                              <thead>
+                                              <tr>
+					          <th>Partner ID</th>
+					          <th>Device ID</th>
+						  <th>Cloud Connector</th>
+						  <th>Device Type</th>
+                                                  <th>Friendly Name</th>
+                                                  <th>UDN</th>
+                                                  <th>Category</th>
+                                                  <th style="width:140px"></th>
+                                              </tr>
+                                              </thead>
+                                          </table>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+             <div class="tab-pane fade" id="camngmnt" style=" border: 1px solid #ddd; border-top: none">
+	   <div class="tab-content">
+              <div class="tab-pane active" id="nodes" style=" border: 1px solid #ddd; border-top: none">
+                  <div class="add-node">
+                      <a href="javascript:;" data-task="create" class="btn btn-primary xcrud-action addbtn"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;Get Partner Device Info</a>
+                      <div class="add-form" style="display: none">
+                          <form method="post" action="" id="form-device" style="">
+                              <fieldset id="FIELDSET_01" class="inptform2">
+
+                                  <div id="form-elem-section" style="width: 100%">
+                                      <div class="col-lg-6">
+				      
+				      <label for="paid" class="form-label">
+                                              Partner Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="paid" name="paid" placeholder="Partner Id" />
+					  
+					</div>
+					<div class="col-lg-6">
+				       <label for="deviceid" class="form-label">
+                                              Device Id
+                                          </label>
+                                          <input type="text" class="reg-input" id="deviceid" name="deviceid" placeholder="Device Id" />
+					  </div>
+                              </fieldset>			      
+                              <div id="create">
+                                  <input type="hidden" name="token" value="67bccf10dd6b7e2350d79c3f8e52e3b7" id="INPUT_44" />
+                           <a style="text-decoration: none;color: #ffffff" class="btn btn-success savebtn" onclick="getDeviceInfo();">Submit</a>
+                       </div>
+                          </form>
+                            </div>
+                              </div>
+                  <div class="row">
+                      <div class="col-lg-14">
+                          <div class="panel panel-default">
+
+                              <!-- /.panel-heading -->
+                              <div class="panel-body">
+                                  <div class="table-responsive">
+                                      <div id="dataTables-example_wrapper" class="dataTables_wrapper form-inline" role="grid">
+                                          
+                                          <table id="calist" class="display table table-striped table-bordered table-hover dataTable no-footer" cellspacing="0" width="100%">
+                                              <thead>
+                                              <tr>
+                                                  <th>Device Id</th>
+					          <th>Device Type</th>
+						  <th>Category</th>
+                                                  <th>Udn</th>
+                                                  <th>Friendly Name</th>
+                                                  <th></th>
+                                              </tr>
+                                              </thead>                                             
+                                          </table>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div><!-- #camngmnt -->
+          </div>	      
+      </div>
+</div>
+ </div>
+    </div>
+<script src="js/indexlogin.js"></script>
+<script>
+ function removeData(){
+	
+	console.log("inside remove data");
+	localStorage.removeItem('realm');	
+	localStorage.removeItem('accessToken');
+	localStorage.removeItem('userId');
+     }
+        var usrid = localStorage.getItem('userId');
+	console.log("userId.... " +usrid);
+	document.getElementById("demo").innerHTML = usrid;
+</script>
+   </div>    
+    <div class="footer">
+	<div class="">
+	<p class="">&copy; 2016 U-NaaS. All rights reserved</p>
+	</div>
+   </div>
+  <script src="js/mows.js"></script>
+  <script src="js/main.js"></script>
+  </center>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/bootbox.min.js"></script>
+      <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+      <script src="js/dataTable.js"></script>
+      <script src="js/dataTable.bootstrap.js"></script>
+
+      <script src="js/common.js"></script>
+      <script src="js/inventoryConfigDevice.js"></script>
+     <!-- <script src="js/platformConfig.js"></script>     -->
+
+      <script type="text/javascript">
+
+      $(document).ready(function() {
+
+
+          $('#actiontable').dataTable( {
+              "aoColumnDefs": [
+                  { 'bSortable': false, 'aTargets': [ 2 ] }
+              ]
+          });
+
+          $('#variablelist').dataTable( {
+              "aoColumnDefs": [
+                  { 'bSortable': false, 'aTargets': [ 2,3,4,5,7,8 ] }
+              ]
+          });
+
+          $('.addbtn').on('click',function() {
+                $('.add-form').slideToggle();
+          });
+
+          $('.savebtn').on('click',function() {
+              $('.add-form').slideUp();
+          });
+
+
+          $('.addplatformbtn').on('click',function() {
+                $('.add-platform').slideToggle();
+          });
+
+          $('.actionsavebtn').on('click',function() {
+              $('.add-action-form').slideUp();
+
+          });
+
+          $('.addvariablebtn').on('click',function() {
+                $('.add-variable').slideToggle();
+
+          });
+
+          $('.savevariablebtn').on('click',function() {
+              $('.add-variable').slideUp();
+          });
+
+          $("input:radio[name='vrange']").click(function() {
+             if($(this).val() == 'range') {
+                 $('.range-input').show();
+             }
+              else {
+                 $('.range-input').hide();
+             }
+          });
+      });
+
+      $(function(){
+          $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+              // Get the name of active tab
+              var activeTab = $(e.target).text();
+              // Get the name of previous tab
+              var previousTab = $(e.relatedTarget).text();
+              $(".active-tab span").html(activeTab);
+              $(".previous-tab span").html(previousTab);
+          });
+      });
+</script>
+  </body>
+</html>

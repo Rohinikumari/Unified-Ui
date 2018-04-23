@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Iotee Demo</h1>
+
+<div id='brokerInfo' data-broker-info='{"brokerHost":"172.16.1.180","brokerPort":"61614","username":"PLATFORM", "password":"platform"}'>
+
+<table>
+<tr>
+		<td>
+			<label>Gateway 1 - Node 1 - Lamp Switch</label>
+		</td>
+  		<td>
+			<a id='entity1-node1' name="Ceiling Light Outer" href="#" onclick="lampSwitch.doAction(this)" data-node-info='{"entityId":"entity1","nodeId":"node1","name":"Ceiling Light Outer","lastStatus":"","nodeType":"BINARY-SWITCH"}' class="ui-link">
+			<img src="images/bulb-icon.png" alt="Light" width="128" height="128" align="middle">
+			</a>
+		</td>
+ </tr>
+ </table>
+
+ <table>
+<tr>
+		<td>
+			<label>Gateway 2 - Node 2 - Lamp Switch</label>
+		</td>
+  		<td>
+			<a id='entity2-node2' name="Ceiling Light Outer" href="#" onclick="lampSwitch.doAction(this)" data-node-info='{"entityId":"entity2","nodeId":"node2","name":"Ceiling Light Outer","lastStatus":"","nodeType":"BINARY-SWITCH"}' class="ui-link">
+			<img src="images/bulb-icon.png" alt="Light" width="128" height="128" align="middle">
+			</a>
+		</td>
+ </tr>
+ </table>
+
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="javascript/appinit.js"></script>
+<script type="text/javascript" src="javascript/lib/ioteemsg.js"></script>
+<script type="text/javascript" src="javascript/lib/mqttws31.js"></script>
+<script type="text/javascript" src="javascript/lib/unaas.js"></script>
+<script type="text/javascript" src="javascript/nodes/lampswitch.js"></script>
+</body>
+</html>
